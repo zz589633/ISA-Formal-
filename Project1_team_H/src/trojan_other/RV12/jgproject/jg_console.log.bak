@@ -1,0 +1,74 @@
+2022-10-07 12:07:14.469836 (2577713) main____ INFO    ----------------------------------------
+2022-10-07 12:07:14.469877 (2577713) main____ INFO    Jasper version info
+2022-10-07 12:07:14.469883 (2577713) main____ INFO      tool      : Jasper 2022.06
+2022-10-07 12:07:14.469888 (2577713) main____ INFO      version   : 2022.06 FCS 64 bits
+2022-10-07 12:07:14.469892 (2577713) main____ INFO      build date: 2022.06.22 13:46:24 UTC
+2022-10-07 12:07:14.469895 (2577713) main____ INFO    ----------------------------------------
+2022-10-07 12:07:14.469898 (2577713) main____ INFO    Runtime info:
+2022-10-07 12:07:14.469901 (2577713) main____ INFO      platform  : Linux 4.18.0-305.3.1.el8.x86_64 x86_64
+2022-10-07 12:07:14.469906 (2577713) main____ INFO      hostname  : cav14.ee.ncku.edu.tw
+2022-10-07 12:07:14.469909 (2577713) main____ INFO      pid       : 2577713
+2022-10-07 12:07:14.469913 (2577713) main____ INFO      arguments : '-style' 'windows' '-allow_unsupported_OS'
+2022-10-07 12:07:14.469917 (2577713) main____ INFO      locale    : UTF-8
+2022-10-07 12:07:14.469920 (2577713) main____ INFO    ----------------------------------------
+2022-10-07 12:07:14.469923 (2577713) main____ INFO    System resource limits info:
+2022-10-07 12:07:14.469926 (2577713) main____ INFO      virtual memory: unlimited
+2022-10-07 12:07:14.469929 (2577713) main____ INFO      cpu time      : unlimited
+2022-10-07 12:07:14.469935 (2577713) main____ INFO      processes     : 1932771
+2022-10-07 12:07:14.469942 (2577713) main____ INFO      stack size    : 8388608 B
+2022-10-07 12:07:14.469945 (2577713) main____ INFO      core file size: unlimited
+2022-10-07 12:07:14.469949 (2577713) main____ INFO      open files    : 1024
+2022-10-07 12:07:14.469952 (2577713) main____ INFO      file size     : unlimited
+2022-10-07 12:07:14.469955 (2577713) main____ INFO    ----------------------------------------
+2022-10-07 12:07:14.469958 (2577713) main____ INFO    Memory statistics:
+2022-10-07 12:07:14.469961 (2577713) main____ INFO      total physical memory  : 494847324 kB
+2022-10-07 12:07:14.469964 (2577713) main____ INFO      free physical memory   : 489244040 kB
+2022-10-07 12:07:14.469967 (2577713) main____ INFO      committed address space: 5227828 kB
+2022-10-07 12:07:14.469970 (2577713) main____ INFO    ----------------------------------------
+2022-10-07 12:07:14.470616 (2577713) main____ INFO    Important environment variables:
+2022-10-07 12:07:14.470628 (2577713) main____ INFO      CDS_LIC_FILE          : '27014@cav14'
+2022-10-07 12:07:14.470633 (2577713) main____ INFO      DISPLAY               : 'localhost:11.0'
+2022-10-07 12:07:14.470637 (2577713) main____ INFO      JASPER_INSTALL_DIR    : '/usr/cad/cadence/jasper_2022.06'
+2022-10-07 12:07:14.470641 (2577713) main____ INFO      JASPER_MACRO_LINEFILES: '1'
+2022-10-07 12:07:14.470645 (2577713) main____ INFO      JASPER_OS_CHECK       : '0'
+2022-10-07 12:07:14.470648 (2577713) main____ INFO      JG_MACRO_LINEFILES    : '1'
+2022-10-07 12:07:14.470652 (2577713) main____ INFO      LANG                  : 'en_US.UTF-8'
+2022-10-07 12:07:14.470656 (2577713) main____ INFO      LM_LICENSE_FILE       : '5280@lstn:5280@lshc:26585@lstn:26585@lstc:26585@lshc:1717@lsncku:'
+2022-10-07 12:07:14.470661 (2577713) main____ INFO    ----------------------------------------
+2022-10-07 12:07:14.470882 (2577713) lic_core INFO    Initializing license system ...
+2022-10-07 12:07:14.484341 (2577713) lic_core INFO    ... license system initialized.
+2022-10-07 12:07:14.498708 (2577713) lic__man INFO    Claim 'main' for <ui>.
+2022-10-07 12:07:14.498734 (2577713) lic_core INFO    (1) checking out 'jasper_interactive' ...
+2022-10-07 12:07:14.626261 (2577713) lic_core INFO    ... (1) checkout failed (error: -5) ("FLEXnet ERROR(-5, 0, 0): No such feature exists.")
+2022-10-07 12:07:14.626284 (2577713) lic_core INFO    (2) checking out 'jasper_pint' ...
+2022-10-07 12:07:14.748771 (2577713) lic_core INFO    ... (2) checkout succeeded
+2022-10-07 12:07:14.748812 (2577713) lic__man INFO    Claim 'fpv' for <ui>.
+2022-10-07 12:07:14.748825 (2577713) lic_core INFO    (3) checking out 'jasper_fpv' ...
+2022-10-07 12:07:14.873609 (2577713) lic_core INFO    ... (3) checkout failed (error: -5) ("FLEXnet ERROR(-5, 0, 0): No such feature exists.")
+2022-10-07 12:07:14.873653 (2577713) lic_core INFO    (4) checking out 'jasper_fao' ...
+2022-10-07 12:07:14.998554 (2577713) lic_core INFO    ... (4) checkout succeeded
+2022-10-07 12:07:14.998896 (2577713) main____ INFO    Tool inactivity delay is 480000 ms.
+2022-10-07 12:07:15.660519 (2577713) lic__man INFO    Claim 'fpv' for <ui>.
+2022-10-07 12:07:15.875140 (2577713) lic__man INFO    Unclaim 'fpv' for <ui>.
+2022-10-07 12:07:15.875174 (2577713) lic__man INFO    Claim 'fpv' for <ui>.
+2022-10-07 12:07:15.880622 (2577713) session_ INFO    Starting analysis session with session id 'session_0' (launcher: <local>) ...
+2022-10-07 12:07:15.883640 (2577713) session_ INFO    Analysis session with session id 'session_0' started (pid: 2577807)
+2022-10-07 12:07:21.036316 (2577713) session_ INFO    Analysis session 'session_0' connected to the console (host: 127.0.0.1:38782)
+2022-10-07 12:07:24.210399 (2577713) main____ INFO    Releasing console memory by request of analysis session 'session_0'.
+2022-10-07 12:07:24.210908 (2577713) lic__man INFO    Unclaim everything for 'session_0'.
+2022-10-07 12:07:24.241535 (2577713) lic__man INFO    Claim 'cov' for 'session_0'.
+2022-10-07 12:07:24.241569 (2577713) lic_core INFO    (5) checking out 'jasper_coverage' ...
+2022-10-07 12:07:24.379712 (2577713) lic_core INFO    ... (5) checkout failed (error: -5) ("FLEXnet ERROR(-5, 0, 0): No such feature exists.")
+2022-10-07 12:07:24.379755 (2577713) lic_core INFO    (6) checking out 'jasper_pcov' ...
+2022-10-07 12:07:24.496783 (2577713) lic_core INFO    ... (6) checkout succeeded
+2022-10-07 12:07:35.178239 (2577713) lic__man INFO    Unclaim everything for 'session_0'.
+2022-10-07 12:07:35.511760 (2577713) lic__man INFO    Claim 'cov' for 'session_0'.
+2022-10-07 12:07:39.907792 (2577713) lic__man INFO    Claim 'fpv' for 'session_0'.
+2022-10-07 12:07:39.907894 (2577713) lic__man INFO    Claim 'fpv' for 'session_0/prove-0'.
+2022-10-07 12:10:38.600406 (2577713) lic__man INFO    Unclaim everything for 'session_0/prove-0'.
+2022-10-07 12:14:12.658546 (2577713) main____ INFO    About to exit: requested from GUI
+2022-10-07 12:14:12.941843 (2577713) session_ INFO    Analysis session 'session_0' disconnected.
+2022-10-07 12:14:13.023885 (2577713) lic_core INFO    (2) checkin jasper_pint
+2022-10-07 12:14:13.028023 (2577713) lic_core INFO    (4) checkin jasper_fao
+2022-10-07 12:14:13.032645 (2577713) lic_core INFO    (6) checkin jasper_pcov
+2022-10-07 12:14:13.036443 (2577713) main____ INFO    Exiting with status 0.

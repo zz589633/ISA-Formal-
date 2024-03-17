@@ -1,0 +1,536 @@
+
+module isa(
+    input clk,
+    input rstn
+);
+
+
+
+logic[31:0]pd_instr,pd_pc;
+assign pd_instr=core.if_unit.pd_instr;
+assign pd_pc=core.if_unit.pd_pc;
+logic[31:0]IFID_inst;
+logic[31:0]IFID_PC;
+
+//IF_ID
+always@(posedge clk or negedge rstn)
+begin
+    if(~rstn)
+    begin
+        IFID_inst <= 32'd0;
+        IFID_PC <= 32'd0;
+    end
+    else if(core.if_unit.if_bubble)
+    begin
+        IFID_inst <= 32'd0;
+        IFID_PC <= core.if_unit.pd_pc;
+        //IFID_PC <= 32'd0;
+    end
+    else if(core.if_unit.st_flush)
+    begin
+        IFID_inst <= 32'd0;
+        IFID_PC <= core.if_unit.st_nxt_pc;
+    end
+    else if(core.if_unit.bu_flush)
+    begin
+        IFID_inst <= 32'd0;
+        IFID_PC <= core.if_unit.bu_nxt_pc;
+    end
+    else if(core.if_unit.id_stall)
+    begin
+        IFID_inst <= IFID_inst;
+        IFID_PC <= IFID_PC;
+    end
+    else
+    begin
+        IFID_inst <= core.if_unit.pd_instr;
+        IFID_PC <= core.if_unit.pd_pc;
+    end
+end
+
+
+logic[31:0]IDEX_inst;
+logic[31:0]IDEX_PC;
+
+//ID_EX
+always @(posedge clk or negedge rstn) 
+begin
+    if(~rstn)
+    begin
+        IDEX_inst <= 32'd0;
+        IDEX_PC <= 32'd0;
+    end
+    else if(core.id_unit.id_bubble)
+    begin
+        IDEX_inst <= 32'd0;
+        IDEX_PC <= 32'd0;
+    end
+    else if(core.id_unit.st_flush)
+    begin
+        IDEX_inst <= IFID_inst;
+        IDEX_PC <= core.id_unit.st_nxt_pc;
+    end
+    else if(core.id_unit.bu_flush)
+    begin
+        IDEX_inst <= IFID_inst;
+        IDEX_PC <= core.id_unit.bu_nxt_pc;
+    end
+    else if(core.id_unit.stall || core.id_unit.id_stall)
+    begin
+        IDEX_inst <= IDEX_inst;
+        IDEX_PC <= IDEX_PC;
+    end
+    else
+    begin
+        IDEX_inst <= IFID_inst;
+        IDEX_PC <= IFID_PC;
+    end    
+end
+
+logic[31:0]EXMEM_inst;
+logic[31:0]EXMEM_PC;
+//EX_MEM
+always@(posedge clk or negedge rstn)
+begin
+    if(~rstn)
+    begin
+        EXMEM_inst <= 32'd0;
+        EXMEM_PC <= 32'd0;
+    end
+    else if(core.ex_units.bu.id_bubble)
+    begin
+        EXMEM_inst <= 32'd0;
+        EXMEM_PC <= IDEX_PC;
+        //EXMEM_PC <= 32'd0;
+    end
+    else if(core.ex_units.ex_bubble)
+    begin
+        EXMEM_inst <= 32'd0;
+        EXMEM_PC <= IDEX_PC;
+        //EXMEM_PC <= 32'd0;
+    end
+    else if(core.ex_units.ex_stall)
+    begin
+        EXMEM_inst <= EXMEM_inst;
+        EXMEM_PC <= EXMEM_PC;
+    end
+    else
+    begin
+        EXMEM_inst <= IDEX_inst;
+        EXMEM_PC <= IDEX_PC;
+    end
+end
+
+
+logic[31:0]MEMWB_inst;
+logic[31:0]MEMWB_PC;
+//MEM_WB
+always@(posedge clk or negedge rstn)
+begin
+    if(~rstn)
+    begin
+        MEMWB_inst <= 32'd0;
+        MEMWB_PC <= 32'd0;
+    end
+    else if(core.mem_unit.mem_bubble)
+    begin
+        MEMWB_inst <= 32'd0;
+        MEMWB_PC <= EXMEM_PC;
+        //MEMWB_PC <= 32'd0;
+    end
+    else if(core.mem_unit.wb_stall)
+    begin
+        MEMWB_inst <= MEMWB_inst;
+        MEMWB_PC <= MEMWB_PC;
+    end
+    else
+    begin
+        MEMWB_inst <= EXMEM_inst;
+        MEMWB_PC <= EXMEM_PC;
+    end
+end
+
+
+logic[31:0]WB_inst_o;
+logic[31:0]WB_PC_o;
+
+always@(posedge clk or negedge rstn)
+begin
+    if(~rstn)
+    begin
+        WB_inst_o <= 32'd0;
+        WB_PC_o <= 32'd0;
+    end
+    else if(core.wb_unit.wb_bubble_o)
+    begin
+        WB_inst_o <= 32'd0;
+        WB_PC_o <= MEMWB_PC;
+        //WB_PC_o <= 32'd0;
+    end
+    else if(core.wb_unit.wb_stall_o)
+    begin
+        WB_inst_o <= 32'd0;
+        WB_PC_o <= WB_PC_o;
+        //WB_PC_o <= 32'd0;
+    end
+    else
+    begin
+        WB_inst_o <= MEMWB_inst;
+        WB_PC_o <= MEMWB_PC;
+    end
+end
+
+logic [4:0]rs1  = WB_inst_o[19:15];
+logic [4:0]rs2  = WB_inst_o[24:20];
+logic [4:0]rd   = WB_inst_o[11:7];
+
+logic [6:0]opcode   =   WB_inst_o[6:0];
+logic [6:0]funct7   =   WB_inst_o[31:25];
+logic [2:0]funct3   =   WB_inst_o[14:12];
+
+logic signed[31:0]rs1_value = (rs1==5'd0)?32'd0:core.int_rf.rf[rs1];
+logic signed[31:0]rs2_value = (rs2==5'd0)?32'd0:core.int_rf.rf[rs2];
+
+logic [31:0] data1  =   (rs1 == 5'b0)? 32'd0 : core.int_rf.rf[rs1];
+logic [31:0] data2  =   (rs2 == 5'b0)? 32'd0 : core.int_rf.rf[rs2];
+
+
+//-------------------------------------------------------------
+logic [31:0]xori_imm = {{20{WB_inst_o[31]}},WB_inst_o[31:20]};
+logic [31:0]xori_golden = rs1_value ^ xori_imm;
+logic xori_trigger = ((WB_inst_o[6:0]==7'b0010011)&&(WB_inst_o[14:12]==3'b100)&&(rd!=5'd0)&&(core.wb_unit.wb_we_o));
+
+xori_check_allbit: assert property(
+    @(posedge clk) disable iff(~rstn)
+    (xori_trigger|->(xori_golden==core.wb_unit.wb_r_o))
+);
+
+
+logic [31:0]xori_golden_reg;
+logic [4:0]xori_rd_reg;
+always@(posedge clk or negedge rstn)
+begin
+    if(~rstn)
+    begin
+        xori_golden_reg <= 32'd0;
+        xori_rd_reg <= 5'd0;
+    end
+    else if(xori_trigger)
+    begin
+        xori_golden_reg <= xori_golden;
+        xori_rd_reg <= rd;
+    end
+    else
+    begin
+        xori_golden_reg <= xori_golden_reg;
+        xori_rd_reg <= xori_rd_reg;
+    end
+end
+xori_check_rf:assert property(
+    @(posedge clk) disable iff(~rstn)
+    (xori_trigger|=>(xori_golden_reg==core.int_rf.rf[xori_rd_reg]))
+);
+
+//-------------------------------------------------------------
+logic [31:0]auipc_imm = {WB_inst_o[31:12],12'd0};
+logic auipc_trigger = ((WB_inst_o[6:0]==7'b0010111)&&(rd!=5'd0)&&(core.wb_unit.wb_we_o));
+logic [31:0]auipc_golden = WB_PC_o+auipc_imm;
+
+aupic_check_allbit: assert property(
+    @(posedge clk) disable iff(~rstn)
+    (auipc_trigger|->(auipc_golden==core.wb_unit.wb_r_o))
+);
+
+
+logic [31:0]auipc_golden_reg;
+logic [4:0]aupic_rd_reg;
+always@(posedge clk or negedge rstn)
+begin
+    if(~rstn)
+    begin
+        auipc_golden_reg <= 32'd0;
+        aupic_rd_reg <= 5'd0;
+    end
+    else if(auipc_trigger)
+    begin
+        auipc_golden_reg <= auipc_golden;
+        aupic_rd_reg <= rd;
+    end
+    else
+    begin
+        auipc_golden_reg <= auipc_golden_reg;
+        aupic_rd_reg <= aupic_rd_reg;
+    end
+end
+
+auipc_check_rf: assert property(
+    @(posedge clk) disable iff(~rstn)
+    (auipc_trigger|=>(auipc_golden_reg==core.int_rf.rf[aupic_rd_reg]))
+);
+
+
+//-------------------------------------------------------------
+logic slt_trigger = ((WB_inst_o[6:0]==7'b0110011)&&(WB_inst_o[14:12]==3'b010)&&(rd!=5'd0)&&(core.wb_unit.wb_we_o));
+logic [31:0]slt_goledn=(rs1_value < rs2_value)? 32'd1:32'd0;
+
+slt_check_allbit: assert property(
+    @(posedge clk) disable iff(~rstn)
+    (slt_trigger|->(slt_goledn==core.wb_unit.wb_r_o))
+);
+
+logic [31:0]slt_golden_reg;
+logic [4:0]slt_rd_reg;
+
+always@(posedge clk or negedge rstn)
+begin
+    if(~rstn)
+    begin
+        slt_golden_reg <= 32'd0;
+        slt_rd_reg <= 5'd0;
+    end
+    else if(slt_trigger)
+    begin
+        slt_golden_reg <= slt_goledn;
+        slt_rd_reg <= rd;
+    end
+    else
+    begin
+        slt_golden_reg <= slt_golden_reg;
+        slt_rd_reg <= slt_rd_reg;
+    end
+end
+
+slt_check_rf:assert property(
+    @(posedge clk) disable iff(~rstn)
+    (slt_trigger|=>(slt_golden_reg==core.int_rf.rf[slt_rd_reg]))
+);
+
+//-------------------------------------------------------------
+logic   LB_trigger, trigger;
+logic   [31:0]  Imm,
+                addr,
+                LB_data,
+                LB_golden;
+logic   [4:0]   LB_rd;
+logic   [1:0]   LB_sel;
+logic   [11:0]  LB_addr,
+                LB_addr_gloden;
+
+assign  trigger  =   (opcode == 7'b0000011) && (funct3 == 3'b000) && (core.wb_unit.wb_we_o);
+
+assign  Imm         =   {WB_inst_o[31:20],20'd0};
+assign  addr        =   Imm + data1;
+assign  LB_sel      =   Imm[1:0];
+
+
+always_ff@(posedge clk or negedge rstn) begin
+    if(!rstn) begin
+        LB_trigger  <=  1'b0;
+        LB_rd       <=  5'd0;
+        LB_addr     <=  32'd0;
+        LB_addr_gloden  <=  12'd0;
+    end
+    else if(trigger) begin
+        LB_trigger  <=  1'b1;
+        LB_rd       <=  rd;
+        LB_addr     <=  addr[15:2];
+        LB_addr_gloden  <=  {4'd0,core.wb_unit.m_qb};
+    end
+    else begin
+        LB_trigger  <=  1'b0;
+        LB_rd       <=  5'd0;
+        LB_addr     <=  32'd0;
+        LB_addr_gloden  <=  12'd0;
+    end
+end
+
+always_ff@(posedge clk or negedge rstn) begin
+    if(!rstn) 
+        LB_golden   <= 32'd0;
+    else if(trigger)
+        LB_golden = {{24{core.wb_unit.wb_r_o[31]}}, core.wb_unit.wb_r_o[7:0]};
+end
+
+always_ff@(posedge clk or negedge rstn) begin
+    if(!rstn)
+        LB_data <=  32'd0;
+    else if(LB_trigger)
+        LB_data <=  (LB_rd == 0)? 32'd0 : core.int_rf.rf[LB_rd];
+end
+
+assign  LB_golden_0 =   LB_golden[0];
+assign  LB_data_0   =   LB_data[0];
+assign  LB_addr_gloden_0    =   LB_addr_gloden[0];
+assign  LB_addr_0   =   LB_addr[0];
+
+ast_LB_check: assert property(
+     LB_trigger |=> (LB_golden == LB_data)
+);
+
+ast_LB_addr_check: assert property(
+     LB_trigger |=> (LB_addr_gloden == LB_addr)
+);
+//-------------------------------------------------------------
+logic           BNE_trigger, branch_taken;
+logic   [31:0]  BNE_pc, BNE_no_pc, BNE_pc_golden, branch_pc, Imm_B, BNE_inst, BNE_no_inst, BNE_inst_gloden;
+
+assign  Imm_B       =   {{20{WB_inst_o[31]}},WB_inst_o[7],WB_inst_o[30:25],WB_inst_o[11:8],1'b0};
+
+assign  branch_pc   =   (branch_taken)? (WB_PC_o + Imm_B) : WB_PC_o + 'h4;
+
+assign  BU_BNE_trigger  =   ((core.ex_units.bu.opcode == 5'b11000) && (core.ex_units.bu.func3 == 3'b001) && core.ex_units.bu.bp_update);
+assign  BNE_trigger     =   ((opcode == 7'b1100011) && (funct3 == 3'b001));
+assign  branch_taken    =   (BNE_trigger)? ((data1 != data2)? 1'b1 : 1'b0) : 1'b0;
+assign  branch_no_taken =   (BNE_trigger)? ((data1 == data2)? 1'b1 : 1'b0) : 1'b0;
+
+always_ff@(posedge clk or negedge rstn) begin
+    if(!rstn) begin
+        BNE_pc_golden   <=  32'd0;
+        BNE_inst_gloden <=  32'd0;
+    end
+    else if(BNE_trigger) begin
+        BNE_pc_golden   <=  branch_pc;
+        BNE_inst_gloden <=  WB_inst_o;
+    end
+end
+
+always_ff@(posedge clk or negedge rstn) begin
+    if(!rstn) begin
+        BNE_pc      <=  32'd0;
+        BNE_inst    <=  32'd0;
+    end
+    else if(BU_BNE_trigger && !core.ex_units.bu.id_bubble) begin
+        BNE_pc      <=  core.ex_units.bu.nxt_pc;
+        BNE_inst    <=  core.ex_units.bu.id_instr;
+    end
+end
+
+always_ff@(posedge clk or negedge rstn) begin
+    if(!rstn) begin
+        BNE_no_pc      <=  32'd0;
+        BNE_no_inst    <=  32'd0;
+    end
+    else if(BU_BNE_trigger && !core.ex_units.bu.id_bubble & BU_can_trigger) begin
+        BNE_no_pc      <=  core.ex_units.bu.nxt_pc;
+        BNE_no_inst    <=  core.ex_units.bu.id_instr;
+    end
+end
+
+logic cs, ns, BU_can_trigger;
+always_ff@(posedge clk or negedge rstn) begin
+    if(!rstn)
+        cs <= 1'd0;
+    else
+        cs <= ns;
+end
+
+always_comb 
+    case(cs)
+        1'b0: ns = (BU_BNE_trigger & !core.ex_units.bu.id_bubble)? 1'b1 : 1'b0;
+        1'b1: ns = (BNE_trigger)? 1'b0 : 1'b1;
+    endcase
+
+always_comb
+    case(cs)
+        1'b0: BU_can_trigger = 1;
+        1'b1: BU_can_trigger = 0;
+    endcase
+
+assign  BNE_pc_golden_3 = BNE_pc_golden[3];
+assign  BNE_pc_3        = BNE_pc[3];
+
+ast_BNE_taken_check: assert property(
+    branch_taken |=> (BNE_pc_golden_3 == BNE_pc_3)
+);
+
+ast_BNE_taken_Inst_check: assert property(
+    branch_taken |=> (BNE_inst == BNE_inst_gloden)
+);
+
+//-------------------------------------------------------------
+
+valid_inst: assume property(
+    ((core.if_unit.pd_instr[6:0]==7'b0110011)&&(core.if_unit.pd_instr[31:25]==7'b0000000||core.if_unit.pd_instr[31:25]==7'b0100000)) 
+    ||((core.if_unit.pd_instr[6:0]==7'b0000011)&&(core.if_unit.pd_instr[14:12]==3'b010||core.if_unit.pd_instr[14:12]==3'b001||core.if_unit.pd_instr[14:12]==3'b100||core.if_unit.pd_instr[14:12]==3'b101||core.if_unit.pd_instr[14:12]==3'b000)) 
+    ||(core.if_unit.pd_instr[6:0]==7'b0010011)
+    ||((core.if_unit.pd_instr[6:0]==7'b1100111)&&(core.if_unit.pd_instr[14:12]==3'b000))
+    ||((core.if_unit.pd_instr[6:0]==7'b0100011)&&(core.if_unit.pd_instr[14:12]==3'b010||core.if_unit.pd_instr[14:12]==3'b000||core.if_unit.pd_instr[14:12]==3'b001))
+    ||(core.if_unit.pd_instr[6:0]==7'b1100011)
+    ||(core.if_unit.pd_instr[6:0]==7'b0010111)
+    ||(core.if_unit.pd_instr[6:0]==7'b0110111)
+    ||(core.if_unit.pd_instr[6:0]==7'b1101111)
+    ||((core.if_unit.pd_instr[6:0]==7'b1110011)&&(core.if_unit.pd_instr[14:12]!=3'b000)&&(core.if_unit.pd_instr[14:12]!=3'b100))
+);
+
+
+property rf_size;
+@(posedge clk) disable iff(!rstn)
+(core.rf_src1[0] <= 5'd2) && (core.rf_src2[0] <= 5'd2) && (core.rf_dst[0] <= 5'd2);
+endproperty
+constraint_rf_size : assume property (rf_size);
+
+//constraints for debug unit
+property dbg_rf; 
+@(posedge clk) disable iff(!rstn)
+ (core.int_rf.du_we_rf == 0);
+endproperty
+constrain_dbg_rf : assume property(dbg_rf);
+
+property dbg_pc;
+@(posedge clk) disable iff(!rstn)
+ (core.ex_units.bu.du_wrote_pc == 0);
+endproperty
+costraint_dbg_pc : assume property (dbg_pc);	
+
+
+//constraint for avoiding load use case
+property guide_instruction_L_load_use;
+@(posedge clk) disable iff(!rstn)
+(core.if_unit.if_instr[6:2] == 5'b00000)
+|=>
+((core.if_unit.if_instr[6:0] == 7'b0010011)  && (core.if_unit.if_instr[31:7] == 25'd0));  // NOP
+endproperty
+guide___instructionn5_load_use : assume property(guide_instruction_L_load_use);
+
+
+//constraints for interrupts
+property ext_nmi_assume; 
+@(posedge clk) disable iff(!rstn)
+(core.ext_nmi == 0);
+endproperty
+constraint_ext_nmi: assume property (ext_nmi_assume);
+
+property interrupt_assume; 
+@(posedge clk) disable iff(!rstn)
+(core.cpu_state.take_interrupt == 0);
+endproperty
+constraint_interrup: assume property (interrupt_assume);
+
+
+//constraint for csr effects
+property guide_du_we_csr;
+@(posedge clk) disable iff(!rstn)
+(core.cpu_state.du_we_csr == 0);
+endproperty
+constraint_guide_du_we_csr : assume property(guide_du_we_csr);
+
+
+// constraint for initial instructions
+property reset_instr_pipe; 
+@(posedge clk)  
+(!rstn)
+|->
+  (core.id_unit.id_instr == 32'b00000000000000000000000000010011) &&
+  (core.ex_units.ex_instr == 32'b00000000000000000000000000010011) &&
+  (core.mem_unit.mem_instr == 32'b00000000000000000000000000010011);
+endproperty
+constraint_reset_instr_pipe: assume property (reset_instr_pipe);
+
+
+
+endmodule
+
+bind riscv_top_ahb3lite isa formaltest_RV12(
+    .clk(HCLK),
+    .rstn(HRESETn), 
+    .*);

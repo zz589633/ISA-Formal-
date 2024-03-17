@@ -1,0 +1,1918 @@
+# ----------------------------------------
+# Jasper Version Info
+# tool      : Jasper 2023.03
+# platform  : Linux 3.10.0-957.21.3.el7.x86_64
+# version   : 2023.03p002 64 bits
+# build date: 2023.05.23 12:39:18 UTC
+# ----------------------------------------
+# started   : 2023-10-01 16:22:52 CST
+# hostname  : cav16.(none)
+# pid       : 12711
+# arguments : '-label' 'session_0' '-console' '//127.0.0.1:45662' '-style' 'windows' '-data' 'AAAAbnicY2RgYLCp////PwMYMFcBCQEGHwZfhiAGVyDpzxAGpOGA8QGUYcPIgAwYAxtQaAYGVphCZGUA9XQJsQ==' '-proj' '/home/N26114950/Formal/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/N26114950/Formal/jgproject/.tmp/.initCmds.tcl'
+
+Any disclosure about the Cadence Design Systems software or its use
+model to any third party violates the written Non-Disclosure Agreement
+between Cadence Design Systems, Inc. and the customer.
+
+THIS SOFTWARE CONTAINS CONFIDENTIAL INFORMATION AND TRADE SECRETS OF
+CADENCE DESIGN SYSTEMS, INC. USE, DISCLOSURE, OR REPRODUCTION IS
+PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF CADENCE
+DESIGN SYSTEMS, INC.
+
+Copyright (C) 2000-2023 Cadence Design Systems, Inc. All Rights
+Reserved.  Unpublished -- rights reserved under the copyright laws of
+the United States.
+
+This product includes software developed by others and redistributed
+according to license agreement. See doc/third_party_readme.txt for
+further details.
+
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c) (1) (ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c) (1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+
+                          Cadence Design Systems, Inc.
+                          2655 Seely Avenue
+                          San Jose, CA 95134
+                          Phone: 408.943.1234
+
+For technical assistance visit http://support.cadence.com.
+
+Jasper Apps Analysis Session - /home/N26114950/Formal/jgproject/sessionLogs/session_0
+
+INFO: successfully checked out licenses "jasper_interactive" and "jasper_fao".
+INFO: reading configuration file "/home/N26114950/.config/cadence/jasper.conf".
+% include /home/N26114950/Formal/Project1_team_H/script/isa_original.tcl
+%% clear -all
+INFO (IPF121): Cleared environment completely for new design analysis.
+%% check_cov -init -type all
+WARNING (WLC008): Attempt to check out a license for "cov" is slow. It has taken more than 10 seconds.
+INFO (ICD011): Message "VERI-9104" has been changed from "error" to "warning" level.
+true
+%% 
+%% analyze -sv [glob ./Project1_team_H/src/original/RV12/ahb3lite_pkg/*.sv]
+[-- (VERI-1482)] Analyzing Verilog file '/usr/cad/cadence/jasper_2023.03/lib/verilog/packages/std/std.sv' into library 'std'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv'
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(50): parameter 'HTRANS_IDLE' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(51): parameter 'HTRANS_BUSY' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(52): parameter 'HTRANS_NONSEQ' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(53): parameter 'HTRANS_SEQ' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(56): parameter 'HSIZE_B8' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(57): parameter 'HSIZE_B16' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(58): parameter 'HSIZE_B32' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(59): parameter 'HSIZE_B64' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(60): parameter 'HSIZE_B128' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(61): parameter 'HSIZE_B256' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(62): parameter 'HSIZE_B512' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(63): parameter 'HSIZE_B1024' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(64): parameter 'HSIZE_BYTE' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(65): parameter 'HSIZE_HWORD' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(66): parameter 'HSIZE_WORD' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(67): parameter 'HSIZE_DWORD' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(70): parameter 'HBURST_SINGLE' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(71): parameter 'HBURST_INCR' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(72): parameter 'HBURST_WRAP4' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(73): parameter 'HBURST_INCR4' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(74): parameter 'HBURST_WRAP8' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(75): parameter 'HBURST_INCR8' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(76): parameter 'HBURST_WRAP16' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(77): parameter 'HBURST_INCR16' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(80): parameter 'HPROT_OPCODE' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(81): parameter 'HPROT_DATA' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(82): parameter 'HPROT_USER' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(83): parameter 'HPROT_PRIVILEGED' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(84): parameter 'HPROT_NON_BUFFERABLE' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(85): parameter 'HPROT_BUFFERABLE' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(86): parameter 'HPROT_NON_CACHEABLE' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(87): parameter 'HPROT_CACHEABLE' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(90): parameter 'HRESP_OKAY' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/ahb3lite_pkg/ahb3lite_pkg.sv(91): parameter 'HRESP_ERROR' declared inside package 'ahb3lite_pkg' shall be treated as localparam
+%% analyze -sv [glob ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/*.sv]
+WARNING (WCD032): Passing arguments to "analyze" as lists has been deprecated.
+    For message help, type "help -message WCD032".
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv'
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(123): parameter 'USTATUS' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(124): parameter 'UIE' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(125): parameter 'UTVEC' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(127): parameter 'USCRATCH' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(128): parameter 'UEPC' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(129): parameter 'UCAUSE' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(131): parameter 'UTVAL' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(132): parameter 'UIP' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(134): parameter 'FFLAGS' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(135): parameter 'FRM' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(136): parameter 'FCSR' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(138): parameter 'CYCLE' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(139): parameter 'TIME' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(140): parameter 'INSTRET' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(141): parameter 'HPMCOUNTER3' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(142): parameter 'CYCLEH' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(143): parameter 'TIMEH' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(144): parameter 'INSTRETH' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(145): parameter 'HPMCOUNTER3H' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(149): parameter 'SSTATUS' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(150): parameter 'SEDELEG' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(151): parameter 'SIDELEG' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(152): parameter 'SIE' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(153): parameter 'STVEC' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(154): parameter 'SCOUNTEREN' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(156): parameter 'SSCRATCH' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(157): parameter 'SEPC' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(158): parameter 'SCAUSE' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(159): parameter 'STVAL' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(160): parameter 'SIP' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(162): parameter 'SATP' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(181): parameter 'MVENDORID' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(182): parameter 'MARCHID' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(183): parameter 'MIMPID' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(184): parameter 'MHARTID' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(186): parameter 'MSTATUS' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(187): parameter 'MISA' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(188): parameter 'MEDELEG' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(189): parameter 'MIDELEG' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(190): parameter 'MIE' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(191): parameter 'MNMIVEC' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(192): parameter 'MTVEC' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(193): parameter 'MCOUNTEREN' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(195): parameter 'MSCRATCH' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(196): parameter 'MEPC' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(197): parameter 'MCAUSE' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(198): parameter 'MTVAL' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(199): parameter 'MIP' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(201): parameter 'PMPCFG0' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(202): parameter 'PMPCFG1' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(203): parameter 'PMPCFG2' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(204): parameter 'PMPCFG3' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(205): parameter 'PMPADDR0' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(206): parameter 'PMPADDR1' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(207): parameter 'PMPADDR2' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(208): parameter 'PMPADDR3' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(209): parameter 'PMPADDR4' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(210): parameter 'PMPADDR5' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(211): parameter 'PMPADDR6' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(212): parameter 'PMPADDR7' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(213): parameter 'PMPADDR8' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(214): parameter 'PMPADDR9' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(215): parameter 'PMPADDR10' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(216): parameter 'PMPADDR11' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(217): parameter 'PMPADDR12' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(218): parameter 'PMPADDR13' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(219): parameter 'PMPADDR14' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(220): parameter 'PMPADDR15' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(223): parameter 'MCYCLE' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(224): parameter 'MINSTRET' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(225): parameter 'MHPMCOUNTER3' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(226): parameter 'MCYCLEH' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(227): parameter 'MINSTRETH' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(228): parameter 'MHPMCOUNTER3H' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(230): parameter 'MHPEVENT3' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(233): parameter 'TSELECT' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(234): parameter 'TDATA1' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(235): parameter 'TDATA2' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(236): parameter 'TDATA3' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(237): parameter 'DCSR' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(238): parameter 'DPC' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(239): parameter 'DSCRATCH' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(242): parameter 'RV32I' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(243): parameter 'RV32E' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(244): parameter 'RV64I' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(245): parameter 'RV128I' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(249): parameter 'PRV_M' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(250): parameter 'PRV_H' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(251): parameter 'PRV_S' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(252): parameter 'PRV_U' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(255): parameter 'VM_MBARE' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(256): parameter 'VM_SV32' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(257): parameter 'VM_SV39' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(258): parameter 'VM_SV48' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(259): parameter 'VM_SV57' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(260): parameter 'VM_SV64' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(263): parameter 'MEI' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(264): parameter 'HEI' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(265): parameter 'SEI' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(266): parameter 'UEI' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(267): parameter 'MTI' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(268): parameter 'HTI' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(269): parameter 'STI' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(270): parameter 'UTI' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(271): parameter 'MSI' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(272): parameter 'HSI' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(273): parameter 'SSI' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(274): parameter 'USI' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(277): parameter 'CY' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(278): parameter 'TM' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(279): parameter 'IR' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(285): parameter 'EXCEPTION_SIZE' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(287): parameter 'CAUSE_MISALIGNED_INSTRUCTION' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(288): parameter 'CAUSE_INSTRUCTION_ACCESS_FAULT' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(289): parameter 'CAUSE_ILLEGAL_INSTRUCTION' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(290): parameter 'CAUSE_BREAKPOINT' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(291): parameter 'CAUSE_MISALIGNED_LOAD' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(292): parameter 'CAUSE_LOAD_ACCESS_FAULT' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(293): parameter 'CAUSE_MISALIGNED_STORE' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(294): parameter 'CAUSE_STORE_ACCESS_FAULT' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(295): parameter 'CAUSE_UMODE_ECALL' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(296): parameter 'CAUSE_SMODE_ECALL' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(297): parameter 'CAUSE_HMODE_ECALL' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(298): parameter 'CAUSE_MMODE_ECALL' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(299): parameter 'CAUSE_INSTRUCTION_PAGE_FAULT' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(300): parameter 'CAUSE_LOAD_PAGE_FAULT' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(301): parameter 'CAUSE_STORE_PAGE_FAULT' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(303): parameter 'CAUSE_USINT' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(304): parameter 'CAUSE_SSINT' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(305): parameter 'CAUSE_HSINT' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(306): parameter 'CAUSE_MSINT' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(307): parameter 'CAUSE_UTINT' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(308): parameter 'CAUSE_STINT' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(309): parameter 'CAUSE_HTINT' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(310): parameter 'CAUSE_MTINT' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(311): parameter 'CAUSE_UEINT' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(312): parameter 'CAUSE_SEINT' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(313): parameter 'CAUSE_HEINT' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_state_pkg.sv(314): parameter 'CAUSE_MEINT' declared inside package 'riscv_state_pkg' shall be treated as localparam
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_rv12_pkg.sv'
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_rv12_pkg.sv(40): parameter 'ARCHID' declared inside package 'riscv_rv12_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_rv12_pkg.sv(41): parameter 'REVPRV_MAJOR' declared inside package 'riscv_rv12_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_rv12_pkg.sv(42): parameter 'REVPRV_MINOR' declared inside package 'riscv_rv12_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_rv12_pkg.sv(43): parameter 'REVUSR_MAJOR' declared inside package 'riscv_rv12_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_rv12_pkg.sv(44): parameter 'REVUSR_MINOR' declared inside package 'riscv_rv12_pkg' shall be treated as localparam
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_pma_pkg.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv'
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(37): parameter 'ILEN' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(38): parameter 'INSTR_NOP' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(43): parameter 'OPC_LOAD' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(44): parameter 'OPC_LOAD_FP' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(45): parameter 'OPC_MISC_MEM' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(46): parameter 'OPC_OP_IMM' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(47): parameter 'OPC_AUIPC' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(48): parameter 'OPC_OP_IMM32' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(49): parameter 'OPC_STORE' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(50): parameter 'OPC_STORE_FP' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(51): parameter 'OPC_AMO' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(52): parameter 'OPC_OP' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(53): parameter 'OPC_LUI' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(54): parameter 'OPC_OP32' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(55): parameter 'OPC_MADD' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(56): parameter 'OPC_MSUB' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(57): parameter 'OPC_NMSUB' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(58): parameter 'OPC_NMADD' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(59): parameter 'OPC_OP_FP' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(60): parameter 'OPC_BRANCH' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(61): parameter 'OPC_JALR' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(62): parameter 'OPC_JAL' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(63): parameter 'OPC_SYSTEM' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(69): parameter 'LUI' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(70): parameter 'AUIPC' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(71): parameter 'JAL' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(72): parameter 'JALR' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(73): parameter 'BEQ' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(74): parameter 'BNE' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(75): parameter 'BLT' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(76): parameter 'BGE' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(77): parameter 'BLTU' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(78): parameter 'BGEU' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(79): parameter 'LB' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(80): parameter 'LH' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(81): parameter 'LW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(82): parameter 'LBU' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(83): parameter 'LHU' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(84): parameter 'LWU' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(85): parameter 'LD' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(86): parameter 'SB' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(87): parameter 'SH' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(88): parameter 'SW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(89): parameter 'SD' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(90): parameter 'ADDI' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(91): parameter 'ADDIW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(92): parameter 'ADD' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(93): parameter 'ADDW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(94): parameter 'SUB' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(95): parameter 'SUBW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(96): parameter 'XORI' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(97): parameter 'XOR' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(98): parameter 'ORI' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(99): parameter 'OR' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(100): parameter 'ANDI' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(101): parameter 'AND' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(102): parameter 'SLLI' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(103): parameter 'SLLIW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(104): parameter 'SLL' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(105): parameter 'SLLW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(106): parameter 'SLTI' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(107): parameter 'SLT' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(108): parameter 'SLTU' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(109): parameter 'SLTIU' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(110): parameter 'SRLI' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(111): parameter 'SRLIW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(112): parameter 'SRL' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(113): parameter 'SRLW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(114): parameter 'SRAI' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(115): parameter 'SRAIW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(116): parameter 'SRA' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(117): parameter 'SRAW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(120): parameter 'SYSTEM' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(121): parameter 'MISCMEM' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(127): parameter 'FENCE' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(128): parameter 'SFENCE_VM' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(129): parameter 'FENCE_I' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(130): parameter 'ECALL' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(131): parameter 'EBREAK' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(132): parameter 'MRET' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(133): parameter 'HRET' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(134): parameter 'SRET' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(135): parameter 'URET' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(139): parameter 'WFI' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(142): parameter 'CSRRW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(143): parameter 'CSRRS' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(144): parameter 'CSRRC' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(145): parameter 'CSRRWI' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(146): parameter 'CSRRSI' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(147): parameter 'CSRRCI' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(154): parameter 'LRW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(155): parameter 'SCW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(156): parameter 'AMOSWAPW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(157): parameter 'AMOADDW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(158): parameter 'AMOXORW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(159): parameter 'AMOANDW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(160): parameter 'AMOORW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(161): parameter 'AMOMINW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(162): parameter 'AMOMAXW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(163): parameter 'AMOMINUW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(164): parameter 'AMOMAXUW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(166): parameter 'LRD' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(167): parameter 'SCD' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(168): parameter 'AMOSWAPD' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(169): parameter 'AMOADDD' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(170): parameter 'AMOXORD' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(171): parameter 'AMOANDD' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(172): parameter 'AMOORD' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(173): parameter 'AMOMIND' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(174): parameter 'AMOMAXD' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(175): parameter 'AMOMINUD' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(176): parameter 'AMOMAXUD' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(182): parameter 'MUL' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(183): parameter 'MULH' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(184): parameter 'MULW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(185): parameter 'MULHSU' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(186): parameter 'MULHU' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(187): parameter 'DIV' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(188): parameter 'DIVW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(189): parameter 'DIVU' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(190): parameter 'DIVUW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(191): parameter 'REM' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(192): parameter 'REMW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(193): parameter 'REMU' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_opcodes_pkg.sv(194): parameter 'REMUW' declared inside package 'riscv_opcodes_pkg' shall be treated as localparam
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv'
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(44): parameter 'DBG_ADDR_SIZE' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(45): parameter 'DU_ADDR_SIZE' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(47): parameter 'MAX_BREAKPOINTS' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(62): parameter 'DBG_INTERNAL' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(63): parameter 'DBG_GPRS' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(64): parameter 'DBG_CSRS' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(82): parameter 'DBG_CTRL' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(83): parameter 'DBG_HIT' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(84): parameter 'DBG_IE' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(85): parameter 'DBG_CAUSE' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(86): parameter 'DBG_BPCTRL0' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(87): parameter 'DBG_BPDATA0' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(88): parameter 'DBG_BPCTRL1' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(89): parameter 'DBG_BPDATA1' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(90): parameter 'DBG_BPCTRL2' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(91): parameter 'DBG_BPDATA2' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(92): parameter 'DBG_BPCTRL3' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(93): parameter 'DBG_BPDATA3' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(94): parameter 'DBG_BPCTRL4' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(95): parameter 'DBG_BPDATA4' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(96): parameter 'DBG_BPCTRL5' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(97): parameter 'DBG_BPDATA5' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(98): parameter 'DBG_BPCTRL6' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(99): parameter 'DBG_BPDATA6' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(100): parameter 'DBG_BPCTRL7' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(101): parameter 'DBG_BPDATA7' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(105): parameter 'DEBUG_SINGLE_STEP_TRACE' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(106): parameter 'DEBUG_BRANCH_TRACE' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(108): parameter 'BP_CTRL_IMP' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(109): parameter 'BP_CTRL_ENA' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(110): parameter 'BP_CTRL_CC_FETCH' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(111): parameter 'BP_CTRL_CC_LD_ADR' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(112): parameter 'BP_CTRL_CC_ST_ADR' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(113): parameter 'BP_CTRL_CC_LDST_ADR' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(123): parameter 'DBG_GPR' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(124): parameter 'DBG_FPR' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(125): parameter 'DBG_NPC' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[WARN (VERI-2418)] ./Project1_team_H/src/original/RV12/rtl/verilog/pkg/riscv_du_pkg.sv(126): parameter 'DBG_PPC' declared inside package 'riscv_du_pkg' shall be treated as localparam
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/pkg/biu_constants_pkg.sv'
+%% analyze -sv [glob ./Project1_team_H/src/original/RV12/memory/*.sv]
+WARNING (WCD032): Passing arguments to "analyze" as lists has been deprecated.
+    For message help, type "help -message WCD032".
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/memory/rl_ram_1rw_generic.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/memory/rl_ram_1rw_easic_n3x.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/memory/rl_ram_1rw.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/memory/rl_ram_1r1w_generic.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/memory/rl_ram_1r1w_easic_n3xs.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/memory/rl_ram_1r1w_easic_n3x.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/memory/rl_ram_1r1w.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/memory/rl_queue.sv'
+%% analyze -sv [glob ./Project1_team_H/src/original/RV12/rtl/verilog/core/ex/*.sv]
+WARNING (WCD032): Passing arguments to "analyze" as lists has been deprecated.
+    For message help, type "help -message WCD032".
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/ex/riscv_mul.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/ex/riscv_lsu.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/ex/riscv_div.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/ex/riscv_bu.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/ex/riscv_alu.sv'
+%% analyze -sv [glob ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/*.sv]
+WARNING (WCD032): Passing arguments to "analyze" as lists has been deprecated.
+    For message help, type "help -message WCD032".
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_wbuf.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_pmpchk.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_pmachk.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_mmu.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_memmisaligned.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_membuf.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_imem_ctrl.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_dmem_ctrl.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/memory/biu_mux.sv'
+%% analyze -sv [glob ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/*.sv]
+WARNING (WCD032): Passing arguments to "analyze" as lists has been deprecated.
+    For message help, type "help -message WCD032".
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_noicache_core.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_icache_core.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dext.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dcache_core.sv'
+%% analyze -sv [glob ./Project1_team_H/src/original/RV12/rtl/verilog/core/*.sv]
+WARNING (WCD032): Passing arguments to "analyze" as lists has been deprecated.
+    For message help, type "help -message WCD032".
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_wb.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_state1.10.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_rf.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_mem.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_if.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_id.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_ex.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_du.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_core.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_bp.sv'
+%% analyze -sv [glob ./Project1_team_H/src/original/RV12/rtl/verilog/ahb3lite/*.sv]
+WARNING (WCD032): Passing arguments to "analyze" as lists has been deprecated.
+    For message help, type "help -message WCD032".
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/ahb3lite/riscv_top_ahb3lite.sv'
+[INFO (VERI-2561)] ./Project1_team_H/src/original/RV12/rtl/verilog/ahb3lite/riscv_top_ahb3lite.sv(293): undeclared symbol 'if_parcel_error', assumed default net type 'wire'
+[INFO (VERI-2561)] ./Project1_team_H/src/original/RV12/rtl/verilog/ahb3lite/riscv_top_ahb3lite.sv(345): undeclared symbol 'dmem_lock', assumed default net type 'wire'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/ahb3lite/riscv_icache_ahb3lite.sv'
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/src/original/RV12/rtl/verilog/ahb3lite/biu_ahb3lite.sv'
+%% analyze -sv [glob ./Project1_team_H/prop/isa.sva]
+[-- (VERI-1482)] Analyzing Verilog file './Project1_team_H/prop/isa.sva'
+[INFO (VERI-2561)] ./Project1_team_H/prop/isa.sva(361): undeclared symbol 'LB_golden_0', assumed default net type 'wire'
+[INFO (VERI-2561)] ./Project1_team_H/prop/isa.sva(362): undeclared symbol 'LB_data_0', assumed default net type 'wire'
+[INFO (VERI-2561)] ./Project1_team_H/prop/isa.sva(363): undeclared symbol 'LB_addr_gloden_0', assumed default net type 'wire'
+[INFO (VERI-2561)] ./Project1_team_H/prop/isa.sva(364): undeclared symbol 'LB_addr_0', assumed default net type 'wire'
+[INFO (VERI-2561)] ./Project1_team_H/prop/isa.sva(381): undeclared symbol 'BU_BNE_trigger', assumed default net type 'wire'
+[INFO (VERI-2561)] ./Project1_team_H/prop/isa.sva(384): undeclared symbol 'branch_no_taken', assumed default net type 'wire'
+[INFO (VERI-2561)] ./Project1_team_H/prop/isa.sva(439): undeclared symbol 'BNE_pc_golden_3', assumed default net type 'wire'
+[INFO (VERI-2561)] ./Project1_team_H/prop/isa.sva(440): undeclared symbol 'BNE_pc_3', assumed default net type 'wire'
+[WARN (VERI-1763)] ./Project1_team_H/prop/isa.sva(368): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./Project1_team_H/prop/isa.sva(372): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1875)] ./Project1_team_H/prop/isa.sva(413): identifier 'BU_can_trigger' is used before its declaration
+[WARN (VERI-1763)] ./Project1_team_H/prop/isa.sva(444): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./Project1_team_H/prop/isa.sva(448): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+%% 
+%% 
+%% elaborate -top riscv_top_ahb3lite\
+          -bbox_mul 64
+INFO (ISW003): Top module name is "riscv_top_ahb3lite".
+[INFO (HIER-8002)] ./Project1_team_H/src/original/RV12/rtl/verilog/ahb3lite/riscv_top_ahb3lite.sv(452): Disabling old hierarchical reference handler
+[WARN (VERI-1927)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_imem_ctrl.sv(516): port 'mem_adr_o' remains unconnected for this instance
+[WARN (VERI-1927)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_dmem_ctrl.sv(516): port 'mem_adr_o' remains unconnected for this instance
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_if.sv(33): compiling module 'riscv_if:(PC_INIT=32'b01000000000)'
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_if.sv(130): expression size 2 truncated to fit in target size 1
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_id.sv(39): compiling module 'riscv_id:(PC_INIT=32'b01000000000,HAS_USER=1)'
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/ex/riscv_alu.sv(33): compiling module 'riscv_alu'
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/ex/riscv_lsu.sv(34): compiling module 'riscv_lsu'
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/ex/riscv_bu.sv(33): compiling module 'riscv_bu'
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_ex.sv(34): compiling module 'riscv_ex:(PC_INIT=32'b01000000000)'
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_mem.sv(42): compiling module 'riscv_mem:(PC_INIT=32'b01000000000)'
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_wb.sv(33): compiling module 'riscv_wb:(PC_INIT=32'b01000000000)'
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_wb.sv(198): expression size 32 truncated to fit in target size 8
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_wb.sv(199): expression size 32 truncated to fit in target size 16
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_state1.10.sv(34): compiling module 'riscv_state1_10:(PC_INIT=32'b01000000000,HAS_SUPER=0,MNMIVEC_DEFAULT=32'b0111111100,MTVEC_DEFAULT=32'b0111000000,HTVEC_DEFAULT=32'b0110000000,STVEC_DEFAULT=32'b0101000000,UTVEC_DEFAULT=32'b0100000000,JEDEC_BANK=10,JEDEC_MANUFACTURER_ID=32'b01101110)'
+[WARN (VERI-1959)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_state1.10.sv(361): left shift count >= width of value
+[WARN (VERI-1142)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_state1.10.sv(648): system task 'display' is ignored for synthesis
+[WARN (VERI-1142)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_state1.10.sv(661): system task 'display' is ignored for synthesis
+[WARN (VERI-1142)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_state1.10.sv(705): system task 'display' is ignored for synthesis
+[WARN (VDB-1002)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_state1.10.sv(234): net 'csr.fcsr.rm[2]' does not have a driver
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_rf.sv(38): compiling module 'riscv_rf:(RDPORTS=1)'
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_du.sv(42): compiling module 'riscv_du'
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_core.sv(39): compiling module 'riscv_core:(PC_INIT=32'b01000000000,MNMIVEC_DEFAULT=32'b0111111100,MTVEC_DEFAULT=32'b0111000000,HTVEC_DEFAULT=32'b0110000000,STVEC_DEFAULT=32'b0101000000,UTVEC_DEFAULT=32'b0100000000,JEDEC_MANUFACTURER_ID=32'b01101110)'
+[WARN (VDB-1002)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/riscv_core.sv(237): net 'du_dati_frf[31]' does not have a driver
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/memory/rl_queue.sv(77): compiling module 'rl_queue'
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/memory/rl_queue.sv(134): expression size 32 truncated to fit in target size 1
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/memory/rl_queue.sv(135): expression size 32 truncated to fit in target size 1
+[WARN (VERI-9005)] ./Project1_team_H/src/original/RV12/memory/rl_queue.sv(165): 32-bit index expression '((~|queue_wadr) ? (DEPTH - 1) : (queue_wadr - 1))' is larger than the required 1 bits. This might lead to an out-of-bound access
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_membuf.sv(36): compiling module 'riscv_membuf'
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_membuf.sv(103): expression size 32 truncated to fit in target size 2
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_membuf.sv(104): expression size 32 truncated to fit in target size 2
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_memmisaligned.sv(32): compiling module 'riscv_memmisaligned'
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_mmu.sv(46): compiling module 'riscv_mmu:(PLEN=32)'
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_pmachk.sv(35): compiling module 'riscv_pmachk:(PLEN=32)'
+[WARN (VERI-2512)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_pmachk.sv(83): severity system task 'error' is ignored for synthesis
+[WARN (VERI-1330)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_pmachk.sv(256): actual bit length 32 differs from formal bit length 30 for port 'pmaddr'
+[WARN (VERI-1330)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_pmachk.sv(257): actual bit length 32 differs from formal bit length 30 for port 'pmaddr'
+[WARN (VERI-1330)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_pmachk.sv(265): actual bit length 32 differs from formal bit length 30 for port 'pmaddr'
+[WARN (VERI-1330)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_pmachk.sv(266): actual bit length 32 differs from formal bit length 30 for port 'pmaddr'
+[WARN (VERI-9005)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_pmachk.sv(277): 32-bit index expression 'matched_pma_idx' is larger than the required 4 bits. This might lead to an out-of-bound access
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_pmpchk.sv(34): compiling module 'riscv_pmpchk:(PLEN=32)'
+[WARN (VERI-2512)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_pmpchk.sv(73): severity system task 'error' is ignored for synthesis
+[WARN (VERI-1330)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_pmpchk.sv(218): actual bit length 32 differs from formal bit length 30 for port 'pmaddr'
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_pmpchk.sv(103): expression size 32 truncated to fit in target size 30
+[WARN (VERI-1330)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_pmpchk.sv(219): actual bit length 32 differs from formal bit length 30 for port 'pmaddr'
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_pmpchk.sv(220): expression size 32 truncated to fit in target size 30
+[WARN (VERI-1330)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_pmpchk.sv(227): actual bit length 32 differs from formal bit length 30 for port 'pmaddr'
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_pmpchk.sv(134): expression size 32 truncated to fit in target size 30
+[WARN (VERI-1330)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_pmpchk.sv(228): actual bit length 32 differs from formal bit length 30 for port 'pmaddr'
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_pmpchk.sv(135): expression size 32 truncated to fit in target size 30
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_pmpchk.sv(229): expression size 32 truncated to fit in target size 30
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_pmpchk.sv(217): expression size 32 truncated to fit in target size 30
+[WARN (VERI-9005)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_pmpchk.sv(239): 32-bit index expression 'matched_pmp' is larger than the required 4 bits. This might lead to an out-of-bound access
+[WARN (VERI-9005)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_pmpchk.sv(248): 32-bit index expression 'matched_pmp' is larger than the required 4 bits. This might lead to an out-of-bound access
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dext.sv(32): compiling module 'riscv_dext:(PLEN=32)'
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dext.sv(125): expression size 32 truncated to fit in target size 2
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dext.sv(126): expression size 32 truncated to fit in target size 2
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dext.sv(135): expression size 32 truncated to fit in target size 2
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dext.sv(138): expression size 32 truncated to fit in target size 2
+[WARN (VDB-1002)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dext.sv(88): net 'hold_mem_prot[2]' does not have a driver
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/memory/rl_queue.sv(77): compiling module 'rl_queue:(DEPTH=8)'
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/biu_mux.sv(37): compiling module 'biu_mux'
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/biu_mux.sv(181): expression size 32 truncated to fit in target size 4
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/biu_mux.sv(233): expression size 32 truncated to fit in target size 1
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/biu_mux.sv(237): expression size 32 truncated to fit in target size 1
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/biu_mux.sv(238): expression size 32 truncated to fit in target size 1
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/memory/rl_queue.sv(77): compiling module 'rl_queue:(DEPTH=8,DBITS=69,ALMOST_FULL_THRESHOLD=4)'
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/memory/rl_ram_1rw_generic.sv(67): compiling module 'rl_ram_1rw_generic:(ABITS=7,DBITS=20)'
+[INFO (VERI-2571)] ./Project1_team_H/src/original/RV12/memory/rl_ram_1rw_generic.sv(88): extracting RAM for identifier 'mem_array'
+[WARN (VERI-9033)] ./Project1_team_H/src/original/RV12/memory/rl_ram_1rw_generic.sv(88): array mem_array (size 2560) automatically BLACK-BOXED. Use the "elaborate -bbox_a" command to prevent automatic black-boxing.
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/memory/rl_ram_1rw.sv(69): compiling module 'rl_ram_1rw:(ABITS=7,DBITS=20)'
+[WARN (VERI-1060)] ./Project1_team_H/src/original/RV12/memory/rl_ram_1rw.sv(115): 'initial' construct is ignored
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/memory/rl_ram_1rw_generic.sv(67): compiling module 'rl_ram_1rw_generic:(ABITS=7,DBITS=256)'
+[INFO (VERI-2571)] ./Project1_team_H/src/original/RV12/memory/rl_ram_1rw_generic.sv(88): extracting RAM for identifier 'mem_array'
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/memory/rl_ram_1rw.sv(69): compiling module 'rl_ram_1rw:(ABITS=7,DBITS=256)'
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_icache_core.sv(67): compiling module 'riscv_icache_core:(PLEN=32,PARCEL_SIZE=32,SIZE=8,BLOCK_SIZE=32)'
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_icache_core.sv(172): expression size 32 truncated to fit in target size 4
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_icache_core.sv(173): expression size 32 truncated to fit in target size 4
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_icache_core.sv(174): expression size 32 truncated to fit in target size 4
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_icache_core.sv(175): expression size 32 truncated to fit in target size 4
+[WARN (VERI-1995)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_icache_core.sv(176): unique/priority if/case is not full
+[WARN (VERI-1995)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_icache_core.sv(417): unique/priority if/case is not full
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_icache_core.sv(538): expression size 8 truncated to fit in target size 1
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_icache_core.sv(541): expression size 256 truncated to fit in target size 32
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_icache_core.sv(556): expression size 21 truncated to fit in target size 20
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_icache_core.sv(560): expression size 32 truncated to fit in target size 2
+[WARN (VERI-1995)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_icache_core.sv(716): unique/priority if/case is not full
+[WARN (VERI-1995)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_icache_core.sv(729): unique/priority if/case is not full
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_icache_core.sv(767): expression size 32 truncated to fit in target size 3
+[WARN (VERI-1995)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_icache_core.sv(768): unique/priority if/case is not full
+[WARN (VERI-1995)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_icache_core.sv(790): unique/priority if/case is not full
+[WARN (VDB-1002)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_icache_core.sv(282): net 'flush_idx[6]' does not have a driver
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_imem_ctrl.sv(35): compiling module 'riscv_imem_ctrl:(PLEN=32,PMA_CNT=16,CACHE_SIZE=8)'
+[WARN (VERI-8028)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_imem_ctrl.sv(486): missing/open ports on instance dext_inst of module riscv_dext
+[WARN (VDB-1013)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_imem_ctrl.sv(516): input port 'biu_adro_i[31]' is not connected on this instance
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/memory/rl_queue.sv(77): compiling module 'rl_queue:(DBITS=69)'
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_membuf.sv(36): compiling module 'riscv_membuf:(DBITS=69)'
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dcache_core.sv(67): compiling module 'riscv_dcache_core:(PLEN=32,SIZE=8,BLOCK_SIZE=32)'
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dcache_core.sv(175): expression size 32 truncated to fit in target size 4
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dcache_core.sv(176): expression size 32 truncated to fit in target size 4
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dcache_core.sv(177): expression size 32 truncated to fit in target size 4
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dcache_core.sv(178): expression size 32 truncated to fit in target size 4
+[WARN (VERI-1995)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dcache_core.sv(179): unique/priority if/case is not full
+[WARN (VERI-9005)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dcache_core.sv(450): 32-bit index expression 'onehot2int(fill_way_select)' is larger than the required 1 bits. This might lead to an out-of-bound access
+[WARN (VERI-9005)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dcache_core.sv(451): 32-bit index expression 'onehot2int(fill_way_select)' is larger than the required 1 bits. This might lead to an out-of-bound access
+[WARN (VERI-1995)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dcache_core.sv(540): unique/priority if/case is not full
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dcache_core.sv(703): expression size 256 truncated to fit in target size 32
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dcache_core.sv(707): expression size 8 truncated to fit in target size 1
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dcache_core.sv(714): expression size 256 truncated to fit in target size 32
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dcache_core.sv(729): expression size 21 truncated to fit in target size 20
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dcache_core.sv(733): expression size 32 truncated to fit in target size 2
+[WARN (VERI-1995)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dcache_core.sv(938): unique/priority if/case is not full
+[WARN (VERI-1995)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dcache_core.sv(951): unique/priority if/case is not full
+[WARN (VERI-9005)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dcache_core.sv(1012): 32-bit index expression 'onehot2int(fill_way_select_hold)' is larger than the required 1 bits. This might lead to an out-of-bound access
+[WARN (VERI-9005)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dcache_core.sv(1014): 32-bit index expression 'onehot2int(fill_way_select_hold)' is larger than the required 1 bits. This might lead to an out-of-bound access
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dcache_core.sv(1032): expression size 32 truncated to fit in target size 3
+[WARN (VERI-1995)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dcache_core.sv(1033): unique/priority if/case is not full
+[WARN (VERI-1995)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/cache/riscv_dcache_core.sv(1063): unique/priority if/case is not full
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_dmem_ctrl.sv(35): compiling module 'riscv_dmem_ctrl:(PLEN=32,PMA_CNT=16,CACHE_SIZE=8)'
+[WARN (VERI-8028)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_dmem_ctrl.sv(486): missing/open ports on instance dext_inst of module riscv_dext
+[WARN (VDB-1013)] ./Project1_team_H/src/original/RV12/rtl/verilog/core/memory/riscv_dmem_ctrl.sv(516): input port 'biu_adro_i[31]' is not connected on this instance
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/ahb3lite/biu_ahb3lite.sv(41): compiling module 'biu_ahb3lite:(ADDR_SIZE=32)'
+[WARN (VERI-1209)] ./Project1_team_H/src/original/RV12/rtl/verilog/ahb3lite/biu_ahb3lite.sv(239): expression size 32 truncated to fit in target size 4
+[INFO (VERI-1018)] ./Project1_team_H/prop/isa.sva(2): compiling module 'isa'
+[WARN (VERI-1220)] ./Project1_team_H/prop/isa.sva(185): using initial value of 'rd' since it is never assigned
+[WARN (VERI-1220)] ./Project1_team_H/prop/isa.sva(187): using initial value of 'opcode' since it is never assigned
+[WARN (VERI-1220)] ./Project1_team_H/prop/isa.sva(189): using initial value of 'funct3' since it is never assigned
+[WARN (VERI-1220)] ./Project1_team_H/prop/isa.sva(194): using initial value of 'data1' since it is never assigned
+[WARN (VERI-1220)] ./Project1_team_H/prop/isa.sva(195): using initial value of 'data2' since it is never assigned
+[WARN (VERI-1220)] ./Project1_team_H/prop/isa.sva(200): using initial value of 'xori_golden' since it is never assigned
+[WARN (VERI-1220)] ./Project1_team_H/prop/isa.sva(201): using initial value of 'xori_trigger' since it is never assigned
+[WARN (VERI-1220)] ./Project1_team_H/prop/isa.sva(236): using initial value of 'auipc_trigger' since it is never assigned
+[WARN (VERI-1220)] ./Project1_team_H/prop/isa.sva(237): using initial value of 'auipc_golden' since it is never assigned
+[WARN (VERI-1220)] ./Project1_team_H/prop/isa.sva(273): using initial value of 'slt_trigger' since it is never assigned
+[WARN (VERI-1220)] ./Project1_team_H/prop/isa.sva(274): using initial value of 'slt_goledn' since it is never assigned
+[WARN (VERI-1220)] ./Project1_team_H/prop/isa.sva(183): using initial value of 'rs1' since it is never assigned
+[WARN (VERI-1220)] ./Project1_team_H/prop/isa.sva(184): using initial value of 'rs2' since it is never assigned
+[WARN (VERI-1220)] ./Project1_team_H/prop/isa.sva(188): using initial value of 'funct7' since it is never assigned
+[WARN (VERI-1220)] ./Project1_team_H/prop/isa.sva(191): using initial value of 'rs1_value' since it is never assigned
+[WARN (VERI-1220)] ./Project1_team_H/prop/isa.sva(192): using initial value of 'rs2_value' since it is never assigned
+[WARN (VERI-1220)] ./Project1_team_H/prop/isa.sva(199): using initial value of 'xori_imm' since it is never assigned
+[WARN (VERI-1220)] ./Project1_team_H/prop/isa.sva(235): using initial value of 'auipc_imm' since it is never assigned
+[WARN (VERI-1209)] ./Project1_team_H/prop/isa.sva(336): expression size 14 truncated to fit in target size 12
+[WARN (VERI-1763)] ./Project1_team_H/prop/isa.sva(463): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[INFO (VERI-1018)] ./Project1_team_H/src/original/RV12/rtl/verilog/ahb3lite/riscv_top_ahb3lite.sv(37): compiling module 'riscv_top_ahb3lite'
+[WARN (VDB-1002)] ./Project1_team_H/src/original/RV12/rtl/verilog/ahb3lite/riscv_top_ahb3lite.sv(345): net 'dmem_lock' does not have a driver
+INFO (INL208): Elaboration synthesis summary:
+  Number of synthesized netlists          43 (8 packages)
+  Single run mode                         On
+  Pipeline                                On (35 pipelined netlists)
+  Late hierarchical reference connection  On
+  Number of analyzed Verilog modules      50 (37 synthesized)
+  Number of analyzed VHDL entities        0 (0 synthesized)
+INFO (INL003): Clearing all state information (assumes, stopats, and so forth).
+INFO (ICOV005): Invoking auto-setup: Creating a coverage model with the following parameters:
+    model = Branch Functional Expression Statement
+    include_x_cover_items = False
+    exclude_empty_branch_cover_items = False
+    exclude_cover_expression_calculation = False
+    enable_proof_core = True
+    skip_ternary_branches = False
+    type = all
+    regexp = False
+    
+    statement_type_blocking = Falsestatement_type_non_blocking = False
+WARNING (WCOV007): Branch Cover items for Continuous Assignments in verilog are not generated by default. Use 'set_assign_scoring' ccf-command or '-include_assign_scoring' switch in 'check_cov -init' tcl command.
+INFO (ICOV008): Adding all assertions to the coverage database.
+INFO (ICOV009): Finished auto-setup.
+riscv_top_ahb3lite
+%% 
+%% clock HCLK
+%% reset ~HRESETn
+INFO (IPM031): Clearing proof results of all properties.
+INFO (IRS006): Current reset condition is "HRESETn".
+%% 
+%% stopat dmem_ctrl_inst.mem_err_o
+dmem_ctrl_inst.mem_err_o
+%% stopat core.du_unit.du_ie
+core.du_unit.du_ie
+%% stopat core.dbg_stall
+core.dbg_stall
+%% assume {core.dbg_stall==1'b0}
+INFO (IPM005): The name "<embedded>::assume:0" is assigned to assumption "core.dbg_stall==1'b0".
+assume:0
+%% 
+%% stopat core.if_unit.active_parcel
+core.if_unit.active_parcel
+%% stopat core.if_unit.pd_instr
+core.if_unit.pd_instr
+%% 
+%% assume {core.if_unit.pd_instr==formaltest_RV12.pd_instr}
+INFO (IPM005): The name "<embedded>::assume:1" is assigned to assumption "core.if_unit.pd_instr==formaltest_RV12.pd_instr".
+assume:1
+%% set_prove_time_limit 259200s
+%% 
+%% 
+%% assume -env {core.if_unit.pd_exception==16'd0}
+INFO (IPM005): The name "assume:2" is assigned to assumption "core.if_unit.pd_exception==16'd0".
+assume:2
+%% assume -env {core.if_unit.if_exception==16'd0}
+INFO (IPM005): The name "assume:3" is assigned to assumption "core.if_unit.if_exception==16'd0".
+assume:3
+%% assume -env {core.id_unit.id_exception==16'd0}
+INFO (IPM005): The name "assume:4" is assigned to assumption "core.id_unit.id_exception==16'd0".
+assume:4
+%% assume -env {core.ex_units.ex_exception==16'd0}
+INFO (IPM005): The name "assume:5" is assigned to assumption "core.ex_units.ex_exception==16'd0".
+assume:5
+%% assume -env {core.mem_unit.mem_exception==16'd0}
+INFO (IPM005): The name "assume:6" is assigned to assumption "core.mem_unit.mem_exception==16'd0".
+assume:6
+%% assume -env {core.wb_unit.wb_exception_o==16'd0}
+INFO (IPM005): The name "assume:7" is assigned to assumption "core.wb_unit.wb_exception_o==16'd0".
+assume:7
+%% 
+%% 
+%% set_engine_mode {Hp Ht B N AM K U Tri}
+%% 
+%% 
+%% prove -all 
+INFO (IPF036): Starting proof on task: "<embedded>", 22 properties to prove with 0 already proven/unreachable
+INFO (IRS029): Starting reset analysis: phase 1 of 4.
+INFO (IRS030): Running reset analysis: phase 2 of 4.
+INFO (IRS031): Running reset analysis: phase 3 of 4.
+INFO (IRS020): Starting the reset analysis simulation with a limit of 100 iterations (phase 4 of 4).
+INFO (IRS024): Reset iterations 0 to 4 analyzed.
+INFO (IRS018): Reset analysis simulation executed for 3 iterations. Assigned values for 5314 of 9468 design flops, 0 of 0 design latches, 4170 of 4240 internal elements.
+INFO (IRS039): Reset analysis complete.
+INFO (IPF031): Settings used for proof thread 0:
+    orchestration                 = off (auto)
+    time_limit                    = 259200s
+    per_property_time_limit       = 1s * 10 ^ scan
+    engine_mode                   = Hp Ht B N AM K U Tri 
+    proofgrid_per_engine_max_jobs = 1
+    max engine jobs               = Hp Ht B N AM K U Tri, total 8
+    proofgrid_mode                = local
+    proofgrid_restarts            = 10
+0.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF051): 0.0.PRE: The cover property "riscv_top_ahb3lite.formaltest_RV12.constraint_reset_instr_pipe:precondition1" was proven unreachable in 0.00 s.
+0: Found proofs for 1 properties in preprocessing
+0: Using multistage preprocessing
+0: Starting reduce
+0: Finished reduce in 0.184s
+0.0.PRE: Performing Proof Simplification...
+0.0.Hp: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.Hp: Proof Simplification Iteration 1	[0.00 s]
+0.0.Hp: Proof Simplification Iteration 2	[0.13 s]
+0.0.Hp: Proof Simplification Iteration 3	[0.19 s]
+0.0.Hp: Proof Simplification Iteration 4	[0.25 s]
+0.0.Hp: Proof Simplification Iteration 5	[0.32 s]
+0.0.Hp: Proof Simplification Iteration 6	[0.37 s]
+0.0.Hp: Proof Simplification Iteration 7	[0.43 s]
+0.0.Hp: Proof Simplification Iteration 8	[0.50 s]
+0.0.Hp: Proof Simplification Iteration 9	[0.56 s]
+0.0.Hp: Proof Simplification Iteration 10	[0.62 s]
+0.0.PRE: Proof Simplification completed in 0.81 s
+0.0.Hp: Identified and disabled 5 duplicated targets.
+0: About to start ProofGrid in its own thread with a limit of 10000 pending notifications and a limit of 10 traces.
+0: =============================== ProofGrid start ===============================
+0: ProofGrid usable level: 4294967295
+0: Initial ProofGrid level: 1
+0: ProofGrid is starting event handling
+0.0.Hp: Proofgrid shell started at 13550@cav16(local) jg_12711_cav16_1
+0.0.Ht: Proofgrid shell started at 13551@cav16(local) jg_12711_cav16_1
+0.0.N: Proofgrid shell started at 13553@cav16(local) jg_12711_cav16_1
+0.0.AM: Proofgrid shell started at 13554@cav16(local) jg_12711_cav16_1
+0.0.U: Proofgrid shell started at 13556@cav16(local) jg_12711_cav16_1
+0.0.Tri: Proofgrid shell started at 13557@cav16(local) jg_12711_cav16_1
+0.0.B: Proofgrid shell started at 13552@cav16(local) jg_12711_cav16_1
+0.0.K: Proofgrid shell started at 13555@cav16(local) jg_12711_cav16_1
+0.0.Hp: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.Ht: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.N: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.AM: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.U: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.K: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.Tri: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.B: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.N: Next scan (0) will use per property time limit: 1s * 10 ^ 0 = 1s
+0.0.N: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit"	[0.00 s].
+0.0.AM: Next scan (0) will use per property time limit: 1s * 10 ^ 0 = 1s
+0.0.AM: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit"	[0.00 s].
+0.0.K: Next scan (0) will use per property time limit: 1s * 10 ^ 0 = 1s
+0.0.K: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit"	[0.00 s].
+0.0.B: Next scan (0) will use per property time limit: 1s * 10 ^ 0 = 1s
+0.0.B: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit"	[0.00 s].
+0.0.U: Seed 1
+0.0.B: Trace Attempt  1	[0.04 s]
+0.0.N: Trace Attempt  1	[0.07 s]
+0.0.Tri: Next scan (0) will use per property time limit: 1s * 10 ^ 0 = 1s
+0.0.Tri: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.K: Trace Attempt  1	[0.07 s]
+0.0.B: Trace Attempt  2	[0.07 s]
+0.0.N: Trace Attempt  2	[0.09 s]
+0.0.N: Trace Attempt  3	[0.09 s]
+0.0.K: Trace Attempt  1	[0.09 s]
+0.0.AM: Trace Attempt  1	[0.10 s]
+0.0.Ht: Trace Attempt  1	[0.23 s]
+0.0.B: Trace Attempt  3	[0.16 s]
+0.0.Ht: Trace Attempt  2	[0.26 s]
+0.0.Tri:    0.05" ---- Launching main thread ----
+0.0.Ht: Trace Attempt  3	[0.30 s]
+0.0.Ht: A trace with 3 cycles was found. [0.30 s]
+INFO (IPF047): 0.0.Ht: The cover property "riscv_top_ahb3lite.formaltest_RV12.guide___instructionn5_load_use:precondition1" was covered in 3 cycles in 0.52 s.
+0.0.AM: Trace Attempt  2	[0.24 s]
+0.0.Ht: Trace Attempt  4	[0.35 s]
+0.0.N: Trace Attempt  3	[0.29 s]
+0.0.K: Trace Attempt  3	[0.29 s]
+0.0.Tri:    0.17" ---- Launching abstraction thread ----
+0.0.Ht: Trace Attempt  5	[0.40 s]
+0.0.Tri:    0.18" ---- Launching multi-phase simplification thread ----
+0.0.N: Trace Attempt  4	[0.40 s]
+0.0.N: Trace Attempt  5	[0.40 s]
+0.0.K: Trace Attempt  1	[0.39 s]
+0.0.AM: Trace Attempt  3	[0.41 s]
+0.0.U: Trace Attempt  1	[0.52 s]
+0.0.B: Trace Attempt  4	[0.54 s]
+0.0.K: Trace Attempt  5	[0.71 s]
+0.0.Tri: Trace Attempt  2	[0.67 s]
+0.0.AM: Trace Attempt  4	[0.75 s]
+0.0.N: Trace Attempt  5	[0.76 s]
+0.0.K: Trace Attempt  1	[0.85 s]
+0.0.K: Trace Attempt  2	[0.85 s]
+0.0.K: Trace Attempt  3	[0.85 s]
+0.0.K: Trace Attempt  4	[0.85 s]
+0.0.K: Trace Attempt  5	[0.85 s]
+0.0.AM: Trace Attempt  5	[0.92 s]
+0.0.B: Trace Attempt  5	[0.93 s]
+0.0.U: Trace Attempt  2	[1.02 s]
+0.0.Tri: Trace Attempt  3	[0.92 s]
+0.0.Tri: Trace Attempt  4	[0.93 s]
+0.0.U: Restart 1
+0.0.N: Trace Attempt  6	[0.89 s]
+0.0.N: Per property time limit expired (1.00 s) [1.04 s]
+0.0.N: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit"	[1.04 s].
+0.0.N: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit:precondition1"	[0.00 s].
+0.0.N: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf:precondition1"	[0.00 s].
+0.0.K: Trace Attempt  7	[0.85 s]
+0.0.K: Per property time limit expired (0.99 s) [1.07 s]
+0.0.K: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit"	[1.07 s].
+0.0.K: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit:precondition1"	[0.00 s].
+0.0.K: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf:precondition1"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.05 s]
+0.0.N: Trace Attempt  2	[0.07 s]
+0.0.N: Trace Attempt  3	[0.07 s]
+0.0.U: Trace Attempt  1	[1.18 s]
+0.0.K: Trace Attempt  1	[0.05 s]
+0.0.K: Trace Attempt  1	[0.07 s]
+0.0.AM: Per property time limit expired (1.00 s) [1.14 s]
+0.0.AM: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit"	[1.14 s].
+0.0.AM: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit:precondition1"	[0.00 s].
+0.0.AM: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf:precondition1"	[0.00 s].
+0.0.B: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit"	[1.17 s].
+0.0.B: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit:precondition1"	[0.00 s].
+0.0.B: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf:precondition1"	[0.00 s].
+0.0.Tri: Per property time limit expired (0.99 s) [1.13 s]
+0.0.Tri: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit"	[1.13 s].
+0.0.Tri: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit:precondition1"	[0.00 s].
+0.0.Tri: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf:precondition1"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.B: Trace Attempt  1	[0.04 s]
+0.0.AM: Trace Attempt  1	[0.07 s]
+0.0.B: Trace Attempt  2	[0.07 s]
+0.0.Tri:    1.09" ---- Launching main thread ----
+0.0.N: Trace Attempt  3	[0.24 s]
+0.0.K: Trace Attempt  3	[0.23 s]
+0.0.B: Trace Attempt  3	[0.14 s]
+0.0.AM: Trace Attempt  2	[0.19 s]
+0.0.Tri:    1.20" ---- Launching abstraction thread ----
+0.0.N: Trace Attempt  4	[0.32 s]
+0.0.N: Trace Attempt  5	[0.32 s]
+0.0.Tri:    1.22" ---- Launching multi-phase simplification thread ----
+0.0.K: Trace Attempt  1	[0.31 s]
+0.0.AM: Trace Attempt  3	[0.33 s]
+0.0.B: Trace Attempt  4	[0.48 s]
+0.0.U: Trace Attempt  2	[1.73 s]
+0.0.N: Trace Attempt  5	[0.64 s]
+0.0.K: Trace Attempt  5	[0.62 s]
+0.0.Tri: Trace Attempt  2	[0.55 s]
+0.0.AM: Trace Attempt  4	[0.67 s]
+0.0.K: Trace Attempt  1	[0.76 s]
+0.0.Tri: Trace Attempt  3	[0.75 s]
+0.0.Tri: Trace Attempt  4	[0.76 s]
+0.0.AM: Trace Attempt  5	[0.84 s]
+0.0.B: Trace Attempt  5	[0.89 s]
+0.0.N: Trace Attempt  7	[0.77 s]
+0.0.N: Per property time limit expired (1.00 s) [1.11 s]
+0.0.N: Per property time limit expired (1.00 s) [1.11 s]
+0.0.N: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit:precondition1"	[1.11 s].
+0.0.N: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf:precondition1"	[1.11 s].
+0.0.N: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf"	[0.00 s].
+0.0.Tri: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit:precondition1"	[0.96 s].
+0.0.Tri: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf:precondition1"	[0.96 s].
+0.0.Tri: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.K: Per property time limit expired (1.00 s) [1.09 s]
+0.0.K: Per property time limit expired (1.00 s) [1.09 s]
+0.0.K: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit:precondition1"	[1.09 s].
+0.0.K: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf:precondition1"	[1.09 s].
+0.0.K: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf"	[0.00 s].
+0.0.U: Trace Attempt  3	[2.24 s]
+0.0.N: Trace Attempt  1	[0.05 s]
+0.0.K: Trace Attempt  1	[0.05 s]
+0.0.Tri:    2.06" ---- Launching main thread ----
+0.0.N: Trace Attempt  2	[0.07 s]
+0.0.N: Trace Attempt  3	[0.07 s]
+0.0.U: Restart 2
+0.0.K: Trace Attempt  1	[0.07 s]
+0.0.B: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit:precondition1"	[1.13 s].
+0.0.B: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf:precondition1"	[1.13 s].
+0.0.B: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf"	[0.00 s].
+0.0.U: Trace Attempt  1	[2.40 s]
+0.0.B: Trace Attempt  1	[0.04 s]
+0.0.B: Trace Attempt  2	[0.06 s]
+0.0.AM: Trace Attempt  6	[1.08 s]
+0.0.AM: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit:precondition1"	[1.23 s].
+0.0.AM: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf:precondition1"	[1.23 s].
+0.0.AM: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf"	[0.00 s].
+0.0.Tri:    2.23" ---- Launching abstraction thread ----
+0.0.N: Trace Attempt  3	[0.25 s]
+0.0.K: Trace Attempt  3	[0.24 s]
+0.0.Tri:    2.25" ---- Launching multi-phase simplification thread ----
+0.0.B: Trace Attempt  3	[0.13 s]
+0.0.AM: Trace Attempt  1	[0.07 s]
+0.0.N: Trace Attempt  4	[0.34 s]
+0.0.N: Trace Attempt  5	[0.34 s]
+0.0.K: Trace Attempt  1	[0.33 s]
+0.0.AM: Trace Attempt  2	[0.20 s]
+0.0.AM: Trace Attempt  3	[0.35 s]
+0.0.Tri: Trace Attempt  2	[0.60 s]
+0.0.B: Trace Attempt  4	[0.51 s]
+0.0.U: Trace Attempt  2	[2.89 s]
+0.0.K: Trace Attempt  5	[0.66 s]
+0.0.N: Trace Attempt  5	[0.69 s]
+0.0.U: Restart 3
+0.0.K: Trace Attempt  1	[0.80 s]
+0.0.K: Trace Attempt  2	[0.80 s]
+0.0.K: Trace Attempt  3	[0.80 s]
+0.0.K: Trace Attempt  4	[0.80 s]
+0.0.K: Trace Attempt  5	[0.80 s]
+0.0.AM: Trace Attempt  4	[0.60 s]
+0.0.Tri: Trace Attempt  3	[0.82 s]
+0.0.U: Trace Attempt  1	[3.05 s]
+0.0.Tri: Trace Attempt  4	[1.00 s]
+0.0.Tri: Trace Attempt  5	[1.03 s]
+0.0.Tri: Per property time limit expired (1.00 s) [1.03 s]
+0.0.Tri: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf"	[1.03 s].
+0.0.Tri: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.B: Trace Attempt  5	[0.92 s]
+0.0.AM: Trace Attempt  5	[0.84 s]
+0.0.N: Trace Attempt  6	[0.83 s]
+0.0.N: Per property time limit expired (1.00 s) [1.07 s]
+0.0.N: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf"	[1.07 s].
+0.0.N: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit"	[0.00 s].
+0.0.Tri:    3.10" ---- Launching main thread ----
+0.0.N: Trace Attempt  1	[0.05 s]
+0.0.K: Trace Attempt  7	[0.80 s]
+0.0.K: Per property time limit expired (1.00 s) [1.11 s]
+0.0.K: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf"	[1.11 s].
+0.0.K: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit"	[0.00 s].
+0.0.N: Trace Attempt  2	[0.06 s]
+0.0.N: Trace Attempt  3	[0.06 s]
+0.0.AM: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf"	[0.97 s].
+0.0.AM: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit"	[0.00 s].
+0.0.Tri:    3.19" ---- Launching abstraction thread ----
+0.0.Tri:    3.21" ---- Launching multi-phase simplification thread ----
+0.0.AM: Trace Attempt  1	[0.07 s]
+0.0.K: Trace Attempt  3	[0.18 s]
+0.0.B: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf"	[1.15 s].
+0.0.B: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit"	[0.00 s].
+0.0.N: Trace Attempt  3	[0.24 s]
+0.0.U: Trace Attempt  2	[3.57 s]
+0.0.B: Trace Attempt  1	[0.07 s]
+0.0.AM: Trace Attempt  2	[0.18 s]
+0.0.K: Trace Attempt  1	[0.27 s]
+0.0.K: Trace Attempt  2	[0.27 s]
+0.0.K: Trace Attempt  3	[0.27 s]
+0.0.K: Trace Attempt  4	[0.27 s]
+0.0.K: Trace Attempt  5	[0.28 s]
+0.0.B: Trace Attempt  2	[0.11 s]
+0.0.N: Trace Attempt  4	[0.36 s]
+0.0.AM: Trace Attempt  3	[0.31 s]
+0.0.B: Trace Attempt  3	[0.21 s]
+0.0.Tri: Trace Attempt  2	[0.56 s]
+0.0.AM: Trace Attempt  4	[0.58 s]
+0.0.N: Trace Attempt  5	[0.73 s]
+0.0.K: Trace Attempt  5	[0.69 s]
+0.0.U: Trace Attempt  3	[4.04 s]
+0.0.Tri: Trace Attempt  3	[0.78 s]
+0.0.Tri: Trace Attempt  4	[0.79 s]
+0.0.U: Restart 4
+0.0.B: Trace Attempt  4	[0.62 s]
+0.0.AM: Trace Attempt  5	[0.76 s]
+0.0.K: Trace Attempt  1	[0.84 s]
+0.0.U: Trace Attempt  1	[4.21 s]
+0.0.N: Trace Attempt  7	[0.88 s]
+0.0.N: Per property time limit expired (1.00 s) [1.11 s]
+0.0.N: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit"	[1.11 s].
+0.0.N: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit:precondition1"	[0.00 s].
+0.0.N: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.auipc_check_rf:precondition1"	[0.00 s].
+0.0.K: Per property time limit expired (1.00 s) [1.10 s]
+0.0.K: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit"	[1.10 s].
+0.0.K: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit:precondition1"	[0.00 s].
+0.0.K: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.auipc_check_rf:precondition1"	[0.00 s].
+0.0.Tri: Per property time limit expired (1.00 s) [1.20 s]
+0.0.Tri: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit"	[1.20 s].
+0.0.Tri: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit:precondition1"	[0.00 s].
+0.0.Tri: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.auipc_check_rf:precondition1"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.N: Trace Attempt  1	[0.05 s]
+0.0.B: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit"	[0.94 s].
+0.0.B: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit:precondition1"	[0.00 s].
+0.0.B: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.auipc_check_rf:precondition1"	[0.00 s].
+0.0.N: Trace Attempt  2	[0.08 s]
+0.0.N: Trace Attempt  3	[0.08 s]
+0.0.B: Trace Attempt  1	[0.04 s]
+0.0.K: Trace Attempt  1	[0.06 s]
+0.0.K: Trace Attempt  1	[0.08 s]
+0.0.B: Trace Attempt  2	[0.06 s]
+0.0.Tri:    4.30" ---- Launching main thread ----
+0.0.AM: Trace Attempt  6	[1.03 s]
+0.0.AM: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit"	[1.18 s].
+0.0.AM: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit:precondition1"	[0.00 s].
+0.0.AM: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.auipc_check_rf:precondition1"	[0.00 s].
+0.0.B: Trace Attempt  3	[0.13 s]
+0.0.Tri:    4.40" ---- Launching abstraction thread ----
+0.0.N: Trace Attempt  3	[0.23 s]
+0.0.Tri:    4.42" ---- Launching multi-phase simplification thread ----
+0.0.AM: Trace Attempt  1	[0.07 s]
+0.0.K: Trace Attempt  3	[0.24 s]
+0.0.N: Trace Attempt  4	[0.32 s]
+0.0.N: Trace Attempt  5	[0.32 s]
+0.0.U: Trace Attempt  2	[4.73 s]
+0.0.K: Trace Attempt  1	[0.33 s]
+0.0.AM: Trace Attempt  2	[0.18 s]
+0.0.AM: Trace Attempt  3	[0.31 s]
+0.0.B: Trace Attempt  4	[0.52 s]
+0.0.Tri: Trace Attempt  2	[0.61 s]
+0.0.N: Trace Attempt  5	[0.77 s]
+0.0.AM: Trace Attempt  4	[0.59 s]
+0.0.U: Trace Attempt  3	[5.20 s]
+0.0.K: Trace Attempt  5	[0.79 s]
+0.0.U: Restart 5
+0.0.Tri: Trace Attempt  3	[0.86 s]
+0.0.Tri: Trace Attempt  4	[0.88 s]
+0.0.AM: Trace Attempt  5	[0.74 s]
+0.0.U: Trace Attempt  1	[5.37 s]
+0.0.B: Trace Attempt  5	[0.92 s]
+0.0.K: Trace Attempt  1	[0.95 s]
+0.0.N: Trace Attempt  7	[0.93 s]
+0.0.N: Per property time limit expired (1.00 s) [1.02 s]
+0.0.N: Per property time limit expired (1.00 s) [1.02 s]
+0.0.N: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit:precondition1"	[1.02 s].
+0.0.N: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.auipc_check_rf:precondition1"	[1.02 s].
+0.0.N: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.auipc_check_rf"	[0.00 s].
+0.0.K: Per property time limit expired (1.00 s) [1.00 s]
+0.0.K: Per property time limit expired (1.00 s) [1.00 s]
+0.0.K: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit:precondition1"	[1.00 s].
+0.0.K: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.auipc_check_rf:precondition1"	[1.00 s].
+0.0.K: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.auipc_check_rf"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.06 s]
+0.0.N: Trace Attempt  2	[0.09 s]
+0.0.N: Trace Attempt  3	[0.09 s]
+0.0.K: Trace Attempt  1	[0.07 s]
+0.0.Tri: Per property time limit expired (1.00 s) [1.08 s]
+0.0.Tri: Per property time limit expired (1.00 s) [1.08 s]
+0.0.Tri: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit:precondition1"	[1.08 s].
+0.0.Tri: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.auipc_check_rf:precondition1"	[1.08 s].
+0.0.Tri: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.auipc_check_rf"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.K: Trace Attempt  1	[0.09 s]
+0.0.AM: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit:precondition1"	[0.98 s].
+0.0.AM: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.auipc_check_rf:precondition1"	[0.98 s].
+0.0.AM: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.auipc_check_rf"	[0.00 s].
+0.0.Tri:    5.37" ---- Launching main thread ----
+0.0.AM: Trace Attempt  1	[0.07 s]
+0.0.B: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit:precondition1"	[1.20 s].
+0.0.B: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.auipc_check_rf:precondition1"	[1.20 s].
+0.0.B: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.auipc_check_rf"	[0.00 s].
+0.0.N: Trace Attempt  3	[0.26 s]
+0.0.K: Trace Attempt  3	[0.25 s]
+0.0.B: Trace Attempt  1	[0.04 s]
+0.0.B: Trace Attempt  2	[0.07 s]
+0.0.Tri:    5.53" ---- Launching abstraction thread ----
+0.0.AM: Trace Attempt  2	[0.20 s]
+0.0.N: Trace Attempt  4	[0.34 s]
+0.0.N: Trace Attempt  5	[0.34 s]
+0.0.K: Trace Attempt  1	[0.34 s]
+0.0.Tri:    5.56" ---- Launching multi-phase simplification thread ----
+0.0.B: Trace Attempt  3	[0.14 s]
+0.0.U: Trace Attempt  2	[5.91 s]
+0.0.AM: Trace Attempt  3	[0.35 s]
+0.0.K: Trace Attempt  5	[0.69 s]
+0.0.N: Trace Attempt  5	[0.72 s]
+0.0.Tri: Trace Attempt  2	[0.61 s]
+0.0.AM: Trace Attempt  4	[0.58 s]
+0.0.B: Trace Attempt  4	[0.54 s]
+0.0.K: Trace Attempt  1	[0.83 s]
+0.0.K: Trace Attempt  2	[0.83 s]
+0.0.K: Trace Attempt  3	[0.83 s]
+0.0.K: Trace Attempt  4	[0.83 s]
+0.0.K: Trace Attempt  5	[0.83 s]
+0.0.Tri: Trace Attempt  3	[0.82 s]
+0.0.AM: Trace Attempt  5	[0.82 s]
+0.0.U: Trace Attempt  3	[6.44 s]
+0.0.U: Restart 6
+0.0.K: Trace Attempt  7	[0.83 s]
+0.0.K: Per property time limit expired (1.00 s) [1.08 s]
+0.0.K: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.auipc_check_rf"	[1.08 s].
+0.0.K: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.slt_check_allbit"	[0.00 s].
+0.0.N: Trace Attempt  6	[0.86 s]
+0.0.N: Per property time limit expired (1.00 s) [1.10 s]
+0.0.N: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.auipc_check_rf"	[1.10 s].
+0.0.N: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.slt_check_allbit"	[0.00 s].
+0.0.Tri: Per property time limit expired (1.00 s) [1.02 s]
+0.0.Tri: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.auipc_check_rf"	[1.02 s].
+0.0.Tri: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.slt_check_allbit"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.K: Trace Attempt  1	[0.05 s]
+0.0.N: Trace Attempt  1	[0.05 s]
+0.0.K: Trace Attempt  1	[0.07 s]
+0.0.K: Trace Attempt  2	[0.07 s]
+0.0.K: Trace Attempt  3	[0.07 s]
+0.0.B: Trace Attempt  5	[0.93 s]
+0.0.N: Trace Attempt  2	[0.07 s]
+0.0.Tri:    6.38" ---- Launching main thread ----
+0.0.U: Trace Attempt  1	[6.61 s]
+0.0.AM: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.auipc_check_rf"	[1.09 s].
+0.0.AM: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.slt_check_allbit"	[0.00 s].
+0.0.AM: Trace Attempt  1	[0.07 s]
+0.0.Tri:    6.52" ---- Launching abstraction thread ----
+0.0.K: Trace Attempt  3	[0.23 s]
+0.0.Tri:    6.54" ---- Launching multi-phase simplification thread ----
+0.0.N: Trace Attempt  3	[0.24 s]
+0.0.B: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.auipc_check_rf"	[1.16 s].
+0.0.B: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.slt_check_allbit"	[0.00 s].
+0.0.K: Trace Attempt  1	[0.32 s]
+0.0.K: Trace Attempt  2	[0.32 s]
+0.0.K: Trace Attempt  3	[0.32 s]
+0.0.K: Trace Attempt  4	[0.32 s]
+0.0.K: Trace Attempt  5	[0.32 s]
+0.0.AM: Trace Attempt  2	[0.20 s]
+0.0.B: Trace Attempt  1	[0.04 s]
+0.0.N: Trace Attempt  4	[0.34 s]
+0.0.B: Trace Attempt  2	[0.07 s]
+0.0.B: Trace Attempt  3	[0.15 s]
+0.0.AM: Trace Attempt  3	[0.36 s]
+0.0.U: Trace Attempt  2	[7.14 s]
+0.0.Tri: Trace Attempt  2	[0.60 s]
+0.0.K: Trace Attempt  5	[0.70 s]
+0.0.N: Trace Attempt  5	[0.70 s]
+0.0.AM: Trace Attempt  4	[0.66 s]
+0.0.B: Trace Attempt  4	[0.54 s]
+0.0.K: Trace Attempt  1	[0.85 s]
+0.0.Tri: Trace Attempt  3	[0.83 s]
+0.0.Tri: Trace Attempt  4	[0.84 s]
+0.0.AM: Trace Attempt  5	[0.84 s]
+0.0.Tri: Per property time limit expired (1.00 s) [1.04 s]
+0.0.Tri: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.slt_check_allbit"	[1.04 s].
+0.0.Tri: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.slt_check_allbit:precondition1"	[0.00 s].
+0.0.Tri: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.slt_check_rf:precondition1"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.K: Per property time limit expired (1.00 s) [1.09 s]
+0.0.K: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.slt_check_allbit"	[1.09 s].
+0.0.K: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.slt_check_allbit:precondition1"	[0.00 s].
+0.0.K: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.slt_check_rf:precondition1"	[0.00 s].
+0.0.N: Trace Attempt  7	[0.85 s]
+0.0.N: Per property time limit expired (1.00 s) [1.10 s]
+0.0.N: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.slt_check_allbit"	[1.10 s].
+0.0.N: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.slt_check_allbit:precondition1"	[0.00 s].
+0.0.N: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.slt_check_rf:precondition1"	[0.00 s].
+0.0.B: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.slt_check_allbit"	[0.81 s].
+0.0.B: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.slt_check_allbit:precondition1"	[0.00 s].
+0.0.B: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.slt_check_rf:precondition1"	[0.00 s].
+0.0.U: Trace Attempt  3	[7.63 s]
+0.0.Tri:    7.42" ---- Launching main thread ----
+0.0.K: Trace Attempt  1	[0.04 s]
+0.0.B: Trace Attempt  1	[0.04 s]
+0.0.N: Trace Attempt  1	[0.04 s]
+0.0.K: Trace Attempt  1	[0.06 s]
+0.0.K: Trace Attempt  2	[0.06 s]
+0.0.K: Trace Attempt  3	[0.06 s]
+0.0.N: Trace Attempt  2	[0.06 s]
+0.0.U: Restart 7
+0.0.B: Trace Attempt  2	[0.06 s]
+0.0.AM: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.slt_check_allbit"	[1.06 s].
+0.0.AM: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.slt_check_allbit:precondition1"	[0.00 s].
+0.0.AM: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.slt_check_rf:precondition1"	[0.00 s].
+0.0.Tri:    7.53" ---- Launching abstraction thread ----
+0.0.B: Trace Attempt  3	[0.14 s]
+0.0.Tri:    7.54" ---- Launching multi-phase simplification thread ----
+0.0.AM: Trace Attempt  1	[0.07 s]
+0.0.U: Trace Attempt  1	[7.79 s]
+0.0.K: Trace Attempt  3	[0.22 s]
+0.0.N: Trace Attempt  3	[0.24 s]
+0.0.AM: Trace Attempt  2	[0.18 s]
+0.0.K: Trace Attempt  1	[0.32 s]
+0.0.K: Trace Attempt  2	[0.32 s]
+0.0.K: Trace Attempt  3	[0.32 s]
+0.0.K: Trace Attempt  4	[0.32 s]
+0.0.K: Trace Attempt  5	[0.32 s]
+0.0.N: Trace Attempt  4	[0.34 s]
+0.0.AM: Trace Attempt  3	[0.31 s]
+0.0.Tri: Trace Attempt  2	[0.53 s]
+0.0.K: Trace Attempt  5	[0.64 s]
+0.0.B: Trace Attempt  4	[0.64 s]
+0.0.AM: Trace Attempt  4	[0.58 s]
+0.0.U: Trace Attempt  2	[8.30 s]
+0.0.N: Trace Attempt  5	[0.71 s]
+0.0.Tri: Trace Attempt  3	[0.78 s]
+0.0.Tri: Trace Attempt  4	[0.78 s]
+0.0.K: Trace Attempt  1	[0.78 s]
+0.0.K: Trace Attempt  2	[0.78 s]
+0.0.K: Trace Attempt  3	[0.78 s]
+0.0.K: Trace Attempt  4	[0.78 s]
+0.0.K: Trace Attempt  5	[0.78 s]
+0.0.AM: Trace Attempt  5	[0.72 s]
+0.0.N: Trace Attempt  6	[0.84 s]
+0.0.N: Per property time limit expired (1.00 s) [1.06 s]
+0.0.N: Per property time limit expired (1.00 s) [1.06 s]
+0.0.B: Trace Attempt  5	[1.05 s]
+0.0.N: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.slt_check_allbit:precondition1"	[1.06 s].
+0.0.N: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.slt_check_rf:precondition1"	[1.06 s].
+0.0.N: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.slt_check_rf"	[0.00 s].
+0.0.K: Trace Attempt  7	[0.78 s]
+0.0.K: Per property time limit expired (1.00 s) [1.09 s]
+0.0.K: Per property time limit expired (1.00 s) [1.09 s]
+0.0.K: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.slt_check_allbit:precondition1"	[1.09 s].
+0.0.K: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.slt_check_rf:precondition1"	[1.09 s].
+0.0.K: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.slt_check_rf"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.05 s]
+0.0.K: Trace Attempt  1	[0.05 s]
+0.0.N: Trace Attempt  2	[0.07 s]
+0.0.N: Trace Attempt  3	[0.07 s]
+0.0.K: Trace Attempt  1	[0.07 s]
+0.0.Tri: Per property time limit expired (1.00 s) [1.18 s]
+0.0.Tri: Per property time limit expired (1.00 s) [1.18 s]
+0.0.Tri: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.slt_check_allbit:precondition1"	[1.18 s].
+0.0.Tri: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.slt_check_rf:precondition1"	[1.18 s].
+0.0.Tri: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.slt_check_rf"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.U: Trace Attempt  3	[8.80 s]
+0.0.AM: Trace Attempt  6	[0.94 s]
+0.0.AM: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.slt_check_allbit:precondition1"	[1.13 s].
+0.0.AM: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.slt_check_rf:precondition1"	[1.13 s].
+0.0.AM: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.slt_check_rf"	[0.00 s].
+0.0.Tri:    8.62" ---- Launching main thread ----
+0.0.U: Restart 8
+0.0.B: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.slt_check_allbit:precondition1"	[1.27 s].
+0.0.B: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.slt_check_rf:precondition1"	[1.27 s].
+0.0.B: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.slt_check_rf"	[0.00 s].
+0.0.N: Trace Attempt  3	[0.23 s]
+0.0.AM: Trace Attempt  1	[0.07 s]
+0.0.K: Trace Attempt  3	[0.24 s]
+0.0.B: Trace Attempt  1	[0.04 s]
+0.0.U: Trace Attempt  1	[8.96 s]
+0.0.B: Trace Attempt  2	[0.07 s]
+0.0.N: Trace Attempt  4	[0.31 s]
+0.0.N: Trace Attempt  5	[0.32 s]
+0.0.Tri:    8.78" ---- Launching abstraction thread ----
+0.0.K: Trace Attempt  1	[0.32 s]
+0.0.Tri:    8.80" ---- Launching multi-phase simplification thread ----
+0.0.B: Trace Attempt  3	[0.14 s]
+0.0.AM: Trace Attempt  2	[0.20 s]
+0.0.AM: Trace Attempt  3	[0.35 s]
+0.0.K: Trace Attempt  5	[0.67 s]
+0.0.N: Trace Attempt  5	[0.68 s]
+0.0.Tri: Trace Attempt  2	[0.62 s]
+0.0.AM: Trace Attempt  4	[0.58 s]
+0.0.B: Trace Attempt  4	[0.56 s]
+0.0.U: Trace Attempt  2	[9.49 s]
+0.0.K: Trace Attempt  1	[0.81 s]
+0.0.K: Trace Attempt  2	[0.81 s]
+0.0.K: Trace Attempt  3	[0.81 s]
+0.0.K: Trace Attempt  4	[0.81 s]
+0.0.K: Trace Attempt  5	[0.81 s]
+0.0.Tri: Trace Attempt  3	[0.86 s]
+0.0.AM: Trace Attempt  5	[0.80 s]
+0.0.N: Trace Attempt  6	[0.83 s]
+0.0.N: Per property time limit expired (1.00 s) [1.06 s]
+0.0.N: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.slt_check_rf"	[1.06 s].
+0.0.N: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_check"	[0.00 s].
+0.0.B: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.slt_check_rf"	[0.90 s].
+0.0.B: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_check"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.05 s]
+0.0.K: Trace Attempt  7	[0.81 s]
+0.0.K: Per property time limit expired (1.00 s) [1.12 s]
+0.0.K: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.slt_check_rf"	[1.12 s].
+0.0.K: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_check"	[0.00 s].
+0.0.N: Trace Attempt  2	[0.07 s]
+0.0.N: Trace Attempt  3	[0.07 s]
+0.0.Tri: Per property time limit expired (1.00 s) [1.06 s]
+0.0.Tri: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.slt_check_rf"	[1.06 s].
+0.0.Tri: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_check"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.B: Trace Attempt  1	[0.04 s]
+0.0.B: Trace Attempt  2	[0.07 s]
+0.0.AM: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.slt_check_rf"	[1.03 s].
+0.0.AM: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_check"	[0.00 s].
+0.0.Tri:    9.67" ---- Launching main thread ----
+0.0.B: Trace Attempt  3	[0.13 s]
+0.0.AM: Trace Attempt  1	[0.07 s]
+0.0.U: Trace Attempt  3	[9.96 s]
+0.0.N: Trace Attempt  3	[0.24 s]
+0.0.K: Trace Attempt  3	[0.17 s]
+0.0.U: Restart 9
+0.0.Tri:    9.81" ---- Launching abstraction thread ----
+0.0.Tri:    9.83" ---- Launching multi-phase simplification thread ----
+0.0.AM: Trace Attempt  2	[0.18 s]
+0.0.N: Trace Attempt  4	[0.32 s]
+0.0.N: Trace Attempt  5	[0.32 s]
+0.0.K: Trace Attempt  1	[0.25 s]
+0.0.U: Trace Attempt  1	[10.11 s]
+0.0.AM: Trace Attempt  3	[0.31 s]
+0.0.B: Trace Attempt  4	[0.54 s]
+0.0.AM: Trace Attempt  4	[0.51 s]
+0.0.Tri: Trace Attempt  2	[0.59 s]
+0.0.K: Trace Attempt  5	[0.63 s]
+0.0.N: Trace Attempt  5	[0.73 s]
+0.0.AM: Trace Attempt  5	[0.63 s]
+0.0.U: Trace Attempt  2	[10.58 s]
+0.0.K: Trace Attempt  1	[0.77 s]
+0.0.K: Trace Attempt  2	[0.77 s]
+0.0.K: Trace Attempt  3	[0.77 s]
+0.0.K: Trace Attempt  4	[0.77 s]
+0.0.K: Trace Attempt  5	[0.77 s]
+0.0.Tri: Trace Attempt  3	[0.77 s]
+0.0.U: Restart 10
+0.0.U: Trace Attempt  1	[10.72 s]
+0.0.B: Trace Attempt  5	[0.94 s]
+0.0.Tri: Trace Attempt  4	[0.95 s]
+0.0.N: Trace Attempt  6	[0.91 s]
+0.0.N: Per property time limit expired (1.00 s) [1.05 s]
+0.0.N: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_check"	[1.05 s].
+0.0.N: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_check:precondition1"	[0.00 s].
+0.0.N: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_addr_check:precondition1"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.05 s]
+0.0.Tri: Trace Attempt  5	[1.03 s]
+0.0.Tri: Trace Attempt  6	[1.03 s]
+0.0.Tri: Per property time limit expired (1.00 s) [1.03 s]
+0.0.Tri: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_check"	[1.03 s].
+0.0.Tri: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_check:precondition1"	[0.00 s].
+0.0.Tri: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_addr_check:precondition1"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.N: Trace Attempt  2	[0.07 s]
+0.0.N: Trace Attempt  3	[0.07 s]
+0.0.K: Trace Attempt  7	[0.77 s]
+0.0.K: Per property time limit expired (1.00 s) [1.07 s]
+0.0.K: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_check"	[1.07 s].
+0.0.K: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_check:precondition1"	[0.00 s].
+0.0.K: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_addr_check:precondition1"	[0.00 s].
+0.0.Tri:   10.73" ---- Launching main thread ----
+0.0.AM: Trace Attempt  6	[0.84 s]
+0.0.AM: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_check"	[1.09 s].
+0.0.AM: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_check:precondition1"	[0.00 s].
+0.0.AM: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_addr_check:precondition1"	[0.00 s].
+0.0.B: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_check"	[1.17 s].
+0.0.B: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_check:precondition1"	[0.00 s].
+0.0.B: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_addr_check:precondition1"	[0.00 s].
+0.0.B: Trace Attempt  1	[0.04 s]
+0.0.AM: Trace Attempt  1	[0.07 s]
+0.0.N: Trace Attempt  3	[0.23 s]
+0.0.B: Trace Attempt  2	[0.06 s]
+0.0.K: Trace Attempt  3	[0.16 s]
+0.0.B: Trace Attempt  3	[0.13 s]
+0.0.N: Trace Attempt  4	[0.31 s]
+0.0.N: Trace Attempt  5	[0.31 s]
+0.0.Tri:   10.89" ---- Launching abstraction thread ----
+0.0.K: Trace Attempt  1	[0.24 s]
+0.0.Tri:   10.92" ---- Launching multi-phase simplification thread ----
+0.0.AM: Trace Attempt  2	[0.18 s]
+0.0.U: Trace Attempt  2	[11.25 s]
+0.0.AM: Trace Attempt  3	[0.31 s]
+0.0.N: Trace Attempt  5	[0.64 s]
+0.0.K: Trace Attempt  5	[0.56 s]
+0.0.AM: Trace Attempt  4	[0.52 s]
+0.0.Tri: Trace Attempt  2	[0.64 s]
+0.0.B: Trace Attempt  4	[0.54 s]
+0.0.K: Trace Attempt  1	[0.71 s]
+0.0.K: Trace Attempt  2	[0.71 s]
+0.0.K: Trace Attempt  3	[0.71 s]
+0.0.K: Trace Attempt  4	[0.71 s]
+0.0.K: Trace Attempt  5	[0.71 s]
+0.0.Tri: Trace Attempt  3	[0.80 s]
+0.0.AM: Trace Attempt  5	[0.72 s]
+0.0.U: Trace Attempt  3	[11.71 s]
+0.0.Tri: Trace Attempt  4	[0.89 s]
+0.0.Tri: Trace Attempt  5	[0.90 s]
+0.0.U: Restart 11
+0.0.U: Trace Attempt  1	[11.90 s]
+0.0.N: Trace Attempt  6	[0.80 s]
+0.0.N: Per property time limit expired (1.00 s) [1.11 s]
+0.0.N: Per property time limit expired (1.00 s) [1.11 s]
+0.0.N: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_check:precondition1"	[1.11 s].
+0.0.N: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_addr_check:precondition1"	[1.11 s].
+0.0.N: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_addr_check"	[0.00 s].
+0.0.B: Trace Attempt  5	[0.96 s]
+0.0.N: Trace Attempt  1	[0.05 s]
+0.0.Tri: Per property time limit expired (1.00 s) [1.10 s]
+0.0.Tri: Per property time limit expired (1.00 s) [1.10 s]
+0.0.Tri: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_check:precondition1"	[1.11 s].
+0.0.Tri: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_addr_check:precondition1"	[1.11 s].
+0.0.Tri: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_addr_check"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.N: Trace Attempt  2	[0.07 s]
+0.0.N: Trace Attempt  3	[0.07 s]
+0.0.K: Trace Attempt  7	[0.71 s]
+0.0.K: Per property time limit expired (1.00 s) [1.10 s]
+0.0.K: Per property time limit expired (1.00 s) [1.10 s]
+0.0.K: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_check:precondition1"	[1.10 s].
+0.0.K: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_addr_check:precondition1"	[1.10 s].
+0.0.K: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_addr_check"	[0.00 s].
+0.0.Tri:   11.82" ---- Launching main thread ----
+0.0.AM: Trace Attempt  6	[0.99 s]
+0.0.AM: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_check:precondition1"	[1.13 s].
+0.0.AM: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_addr_check:precondition1"	[1.13 s].
+0.0.AM: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_addr_check"	[0.00 s].
+0.0.B: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_check:precondition1"	[1.18 s].
+0.0.B: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_addr_check:precondition1"	[1.18 s].
+0.0.B: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_addr_check"	[0.00 s].
+0.0.N: Trace Attempt  3	[0.25 s]
+0.0.AM: Trace Attempt  1	[0.07 s]
+0.0.K: Trace Attempt  3	[0.18 s]
+0.0.B: Trace Attempt  1	[0.04 s]
+0.0.Tri:   11.97" ---- Launching abstraction thread ----
+0.0.Tri:   12.00" ---- Launching multi-phase simplification thread ----
+0.0.B: Trace Attempt  2	[0.07 s]
+0.0.N: Trace Attempt  4	[0.33 s]
+0.0.N: Trace Attempt  5	[0.33 s]
+0.0.AM: Trace Attempt  2	[0.17 s]
+0.0.K: Trace Attempt  1	[0.28 s]
+0.0.B: Trace Attempt  3	[0.14 s]
+0.0.U: Trace Attempt  2	[12.40 s]
+0.0.AM: Trace Attempt  3	[0.34 s]
+0.0.Tri: Trace Attempt  2	[0.68 s]
+0.0.N: Trace Attempt  5	[0.75 s]
+0.0.K: Trace Attempt  5	[0.69 s]
+0.0.B: Trace Attempt  4	[0.54 s]
+0.0.AM: Trace Attempt  4	[0.64 s]
+0.0.K: Trace Attempt  1	[0.86 s]
+0.0.Tri: Trace Attempt  3	[0.92 s]
+0.0.U: Trace Attempt  3	[12.90 s]
+0.0.AM: Trace Attempt  5	[0.81 s]
+0.0.U: Restart 12
+0.0.N: Trace Attempt  7	[0.93 s]
+0.0.N: Per property time limit expired (1.00 s) [1.08 s]
+0.0.N: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_addr_check"	[1.09 s].
+0.0.N: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_check"	[0.00 s].
+0.0.B: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_addr_check"	[0.89 s].
+0.0.B: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_check"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.05 s]
+0.0.U: Trace Attempt  1	[13.06 s]
+0.0.K: Per property time limit expired (1.00 s) [1.08 s]
+0.0.K: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_addr_check"	[1.08 s].
+0.0.K: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_check"	[0.00 s].
+0.0.N: Trace Attempt  2	[0.07 s]
+0.0.N: Trace Attempt  3	[0.07 s]
+0.0.Tri: Per property time limit expired (1.00 s) [1.12 s]
+0.0.Tri: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_addr_check"	[1.12 s].
+0.0.Tri: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_check"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.B: Trace Attempt  1	[0.04 s]
+0.0.B: Trace Attempt  2	[0.07 s]
+0.0.Tri:   12.91" ---- Launching main thread ----
+0.0.AM: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_LB_addr_check"	[1.05 s].
+0.0.AM: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_check"	[0.00 s].
+0.0.B: Trace Attempt  3	[0.14 s]
+0.0.AM: Trace Attempt  1	[0.07 s]
+0.0.K: Trace Attempt  3	[0.18 s]
+0.0.N: Trace Attempt  3	[0.26 s]
+0.0.Tri:   13.04" ---- Launching abstraction thread ----
+0.0.Tri:   13.07" ---- Launching multi-phase simplification thread ----
+0.0.K: Trace Attempt  1	[0.27 s]
+0.0.K: Trace Attempt  2	[0.27 s]
+0.0.K: Trace Attempt  3	[0.28 s]
+0.0.K: Trace Attempt  4	[0.28 s]
+0.0.AM: Trace Attempt  2	[0.21 s]
+0.0.K: Trace Attempt  5	[0.29 s]
+0.0.N: Trace Attempt  4	[0.36 s]
+0.0.AM: Trace Attempt  3	[0.37 s]
+0.0.B: Trace Attempt  4	[0.51 s]
+0.0.U: Trace Attempt  2	[13.62 s]
+0.0.Tri: Trace Attempt  2	[0.53 s]
+0.0.N: Trace Attempt  5	[0.69 s]
+0.0.K: Trace Attempt  5	[0.63 s]
+0.0.AM: Trace Attempt  4	[0.66 s]
+0.0.Tri: Trace Attempt  3	[0.76 s]
+0.0.K: Trace Attempt  1	[0.77 s]
+0.0.K: Trace Attempt  2	[0.78 s]
+0.0.K: Trace Attempt  3	[0.78 s]
+0.0.K: Trace Attempt  4	[0.78 s]
+0.0.K: Trace Attempt  5	[0.79 s]
+0.0.B: Trace Attempt  5	[0.91 s]
+0.0.AM: Trace Attempt  5	[0.87 s]
+0.0.N: Trace Attempt  7	[0.85 s]
+0.0.N: Per property time limit expired (1.00 s) [1.07 s]
+0.0.N: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_check"	[1.07 s].
+0.0.N: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_check:precondition1"	[0.00 s].
+0.0.N: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_Inst_check:precondition1"	[0.00 s].
+0.0.U: Trace Attempt  3	[14.12 s]
+0.0.N: Trace Attempt  1	[0.05 s]
+0.0.N: Trace Attempt  2	[0.08 s]
+0.0.N: Trace Attempt  3	[0.08 s]
+0.0.K: Per property time limit expired (1.00 s) [1.10 s]
+0.0.K: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_check"	[1.10 s].
+0.0.K: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_check:precondition1"	[0.00 s].
+0.0.K: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_Inst_check:precondition1"	[0.00 s].
+0.0.U: Restart 13
+0.0.B: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_check"	[1.17 s].
+0.0.B: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_check:precondition1"	[0.00 s].
+0.0.B: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_Inst_check:precondition1"	[0.00 s].
+0.0.AM: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_check"	[1.06 s].
+0.0.AM: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_check:precondition1"	[0.00 s].
+0.0.AM: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_Inst_check:precondition1"	[0.00 s].
+0.0.Tri: Per property time limit expired (1.00 s) [1.16 s]
+0.0.Tri: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_check"	[1.16 s].
+0.0.Tri: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_check:precondition1"	[0.00 s].
+0.0.Tri: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_Inst_check:precondition1"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.B: Trace Attempt  1	[0.04 s]
+0.0.B: Trace Attempt  2	[0.07 s]
+0.0.U: Trace Attempt  1	[14.28 s]
+0.0.AM: Trace Attempt  1	[0.07 s]
+0.0.Tri:   14.08" ---- Launching main thread ----
+0.0.N: Trace Attempt  3	[0.26 s]
+0.0.B: Trace Attempt  3	[0.13 s]
+0.0.K: Trace Attempt  3	[0.19 s]
+0.0.N: Trace Attempt  4	[0.35 s]
+0.0.N: Trace Attempt  5	[0.35 s]
+0.0.AM: Trace Attempt  2	[0.23 s]
+0.0.K: Trace Attempt  1	[0.28 s]
+0.0.Tri:   14.23" ---- Launching abstraction thread ----
+0.0.Tri:   14.25" ---- Launching multi-phase simplification thread ----
+0.0.AM: Trace Attempt  3	[0.35 s]
+0.0.AM: Trace Attempt  4	[0.52 s]
+0.0.B: Trace Attempt  4	[0.53 s]
+0.0.U: Trace Attempt  2	[14.77 s]
+0.0.N: Trace Attempt  5	[0.73 s]
+0.0.K: Trace Attempt  5	[0.64 s]
+0.0.Tri: Trace Attempt  2	[0.63 s]
+0.0.K: Trace Attempt  1	[0.80 s]
+0.0.K: Trace Attempt  2	[0.80 s]
+0.0.K: Trace Attempt  3	[0.80 s]
+0.0.K: Trace Attempt  4	[0.80 s]
+0.0.K: Trace Attempt  5	[0.81 s]
+0.0.AM: Trace Attempt  5	[0.93 s]
+0.0.N: Trace Attempt  7	[0.89 s]
+0.0.N: Per property time limit expired (1.00 s) [1.07 s]
+0.0.N: Per property time limit expired (1.00 s) [1.07 s]
+0.0.N: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_check:precondition1"	[1.07 s].
+0.0.N: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_Inst_check:precondition1"	[1.07 s].
+0.0.N: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_Inst_check"	[0.00 s].
+0.0.B: Trace Attempt  5	[0.98 s]
+0.0.N: Trace Attempt  1	[0.05 s]
+0.0.N: Trace Attempt  2	[0.07 s]
+0.0.N: Trace Attempt  3	[0.07 s]
+0.0.K: Per property time limit expired (1.00 s) [1.06 s]
+0.0.K: Per property time limit expired (1.00 s) [1.06 s]
+0.0.K: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_check:precondition1"	[1.06 s].
+0.0.K: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_Inst_check:precondition1"	[1.06 s].
+0.0.K: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_Inst_check"	[0.00 s].
+0.0.AM: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_check:precondition1"	[1.04 s].
+0.0.AM: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_Inst_check:precondition1"	[1.04 s].
+0.0.AM: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_Inst_check"	[0.00 s].
+0.0.Tri: Per property time limit expired (1.00 s) [1.03 s]
+0.0.Tri: Per property time limit expired (1.00 s) [1.03 s]
+0.0.Tri: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_check:precondition1"	[1.03 s].
+0.0.Tri: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_Inst_check:precondition1"	[1.03 s].
+0.0.Tri: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_Inst_check"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.U: Trace Attempt  3	[15.28 s]
+0.0.AM: Trace Attempt  1	[0.08 s]
+0.0.U: Restart 14
+0.0.Tri:   15.12" ---- Launching main thread ----
+0.0.K: Trace Attempt  3	[0.18 s]
+0.0.N: Trace Attempt  3	[0.26 s]
+0.0.U: Trace Attempt  1	[15.44 s]
+0.0.AM: Trace Attempt  2	[0.20 s]
+0.0.K: Trace Attempt  1	[0.26 s]
+0.0.B: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_check:precondition1"	[1.28 s].
+0.0.B: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_Inst_check:precondition1"	[1.28 s].
+0.0.B: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_Inst_check"	[0.00 s].
+0.0.K: Trace Attempt  2	[0.27 s]
+0.0.K: Trace Attempt  3	[0.27 s]
+0.0.N: Trace Attempt  4	[0.35 s]
+0.0.K: Trace Attempt  4	[0.27 s]
+0.0.Tri:   15.27" ---- Launching abstraction thread ----
+0.0.N: Trace Attempt  5	[0.35 s]
+0.0.Tri:   15.29" ---- Launching multi-phase simplification thread ----
+0.0.B: Trace Attempt  1	[0.04 s]
+0.0.B: Trace Attempt  2	[0.07 s]
+0.0.AM: Trace Attempt  3	[0.34 s]
+0.0.B: Trace Attempt  3	[0.17 s]
+0.0.AM: Trace Attempt  4	[0.56 s]
+0.0.Tri: Trace Attempt  2	[0.59 s]
+0.0.K: Trace Attempt  5	[0.65 s]
+0.0.N: Trace Attempt  5	[0.79 s]
+0.0.U: Trace Attempt  2	[15.94 s]
+0.0.AM: Trace Attempt  5	[0.72 s]
+0.0.K: Trace Attempt  1	[0.80 s]
+0.0.K: Trace Attempt  2	[0.80 s]
+0.0.K: Trace Attempt  3	[0.81 s]
+0.0.K: Trace Attempt  4	[0.81 s]
+0.0.K: Trace Attempt  5	[0.81 s]
+0.0.Tri: Trace Attempt  3	[0.79 s]
+0.0.B: Trace Attempt  4	[0.62 s]
+0.0.N: Trace Attempt  6	[0.94 s]
+0.0.N: Per property time limit expired (1.00 s) [1.09 s]
+0.0.N: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_Inst_check"	[1.09 s].
+0.0.N: Next scan (1) will use per property time limit: 1s * 10 ^ 1 = 10s
+0.0.N: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit"	[0.00 s].
+0.0.K: Trace Attempt  7	[0.83 s]
+0.0.K: Per property time limit expired (1.00 s) [1.03 s]
+0.0.K: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_Inst_check"	[1.03 s].
+0.0.K: Next scan (1) will use per property time limit: 1s * 10 ^ 1 = 10s
+0.0.K: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit"	[0.00 s].
+0.0.Tri: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_Inst_check"	[0.99 s].
+0.0.Tri: Next scan (1) will use per property time limit: 1s * 10 ^ 1 = 10s
+0.0.Tri: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.Tri:   16.13" ---- Launching main thread ----
+0.0.B: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_Inst_check"	[0.88 s].
+0.0.B: Next scan (1) will use per property time limit: 1s * 10 ^ 1 = 10s
+0.0.B: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit"	[0.00 s].
+0.0.AM: Trace Attempt  6	[0.92 s]
+0.0.AM: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_Inst_check"	[1.14 s].
+0.0.AM: Next scan (1) will use per property time limit: 1s * 10 ^ 1 = 10s
+0.0.AM: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit"	[0.00 s].
+0.0.B: Trace Attempt  1	[0.03 s]
+0.0.B: Trace Attempt  2	[0.06 s]
+0.0.AM: Trace Attempt  1	[0.06 s]
+0.0.U: Trace Attempt  3	[16.46 s]
+0.0.Tri:   16.27" ---- Launching abstraction thread ----
+0.0.B: Trace Attempt  3	[0.13 s]
+0.0.Tri:   16.28" ---- Launching multi-phase simplification thread ----
+0.0.AM: Trace Attempt  2	[0.18 s]
+0.0.AM: Trace Attempt  3	[0.33 s]
+0.0.K: Trace Attempt  7	[0.52 s]
+0.0.N: Trace Attempt  7	[0.61 s]
+0.0.B: Trace Attempt  4	[0.51 s]
+0.0.K: Trace Attempt  1	[0.71 s]
+0.0.K: Trace Attempt  2	[0.71 s]
+0.0.K: Trace Attempt  3	[0.71 s]
+0.0.K: Trace Attempt  4	[0.71 s]
+0.0.K: Trace Attempt  5	[0.71 s]
+0.0.AM: Trace Attempt  4	[0.60 s]
+0.0.U: Trace Attempt  4	[17.01 s]
+0.0.U: Restart 15
+0.0.AM: Trace Attempt  5	[0.77 s]
+0.0.U: Trace Attempt  1	[17.20 s]
+0.0.B: Trace Attempt  5	[0.93 s]
+0.0.K: Trace Attempt  1	[1.47 s]
+0.0.K: Trace Attempt  2	[1.48 s]
+0.0.K: Trace Attempt  3	[1.48 s]
+0.0.K: Trace Attempt  4	[1.48 s]
+0.0.K: Trace Attempt  5	[1.48 s]
+0.0.U: Trace Attempt  2	[17.75 s]
+0.0.Tri: Trace Attempt  5	[1.65 s]
+0.0.U: Trace Attempt  3	[18.31 s]
+0.0.K: Trace Attempt  1	[2.66 s]
+0.0.K: Trace Attempt  2	[2.66 s]
+0.0.K: Trace Attempt  3	[2.66 s]
+0.0.K: Trace Attempt  4	[2.67 s]
+0.0.K: Trace Attempt  5	[2.67 s]
+0.0.U: Trace Attempt  4	[18.94 s]
+0.0.U: Restart 16
+0.0.U: Trace Attempt  1	[19.15 s]
+0.0.Ht: Trace Attempt 13	[1.71 s]
+0.0.Ht: A trace with 13 cycles was found. [19.12 s]
+INFO (IPF047): 0.0.Ht: The cover property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit:precondition1" was covered in 13 cycles in 19.24 s.
+INFO (IPF047): 0.0.Ht: The cover property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf:precondition1" was covered in 13 cycles in 19.24 s.
+0.0.Ht: A trace with 13 cycles was found. [19.35 s]
+INFO (IPF047): 0.0.Ht: The cover property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit:precondition1" was covered in 13 cycles in 19.39 s.
+INFO (IPF047): 0.0.Ht: The cover property "riscv_top_ahb3lite.formaltest_RV12.auipc_check_rf:precondition1" was covered in 13 cycles in 19.39 s.
+0.0.U: Trace Attempt  2	[19.73 s]
+0.0.U: Trace Attempt  3	[20.30 s]
+0.0.U: Trace Attempt  4	[20.87 s]
+0.0.U: Restart 17
+0.0.U: Trace Attempt  1	[21.06 s]
+0.0.K: Trace Attempt  1	[4.86 s]
+0.0.K: Trace Attempt  2	[4.89 s]
+0.0.K: Trace Attempt  3	[4.89 s]
+0.0.K: Trace Attempt  4	[4.91 s]
+0.0.K: Trace Attempt  5	[4.93 s]
+0.0.N: Trace Attempt 12	[5.01 s]
+0.0.U: Trace Attempt  2	[21.59 s]
+0.0.B: Trace Attempt 13	[5.68 s]
+0.0.AM: Trace Attempt 10	[5.72 s]
+0.0.U: Trace Attempt  3	[22.16 s]
+0.0.Tri: Trace Attempt 18	[6.12 s]
+0.0.U: Trace Attempt  4	[22.75 s]
+0.0.U: Restart 18
+0.0.U: Trace Attempt  1	[22.93 s]
+0.0.U: Trace Attempt  2	[23.46 s]
+0.0.U: Trace Attempt  3	[23.93 s]
+0.0.U: Restart 19
+0.0.U: Trace Attempt  1	[24.08 s]
+0.0.U: Trace Attempt  2	[24.61 s]
+0.0.U: Trace Attempt  3	[25.17 s]
+0.0.U: Trace Attempt  4	[25.70 s]
+0.0.U: Restart 20
+0.0.U: Trace Attempt  1	[25.89 s]
+0.0.Tri: Trace Attempt 19	[7.96 s]
+0.0.Tri: Per property time limit expired (10.00 s) [10.17 s]
+0.0.Tri: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit"	[10.17 s].
+0.0.Tri: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.U: Trace Attempt  2	[26.46 s]
+0.0.N: Trace Attempt 14	[6.65 s]
+0.0.N: Per property time limit expired (10.00 s) [10.23 s]
+0.0.N: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit"	[10.24 s].
+0.0.N: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf"	[0.00 s].
+0.0.Tri:   26.27" ---- Launching main thread ----
+0.0.K: Trace Attempt 14	[6.51 s]
+0.0.K: Per property time limit expired (10.00 s) [10.27 s]
+0.0.K: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit"	[10.27 s].
+0.0.K: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf"	[0.00 s].
+0.0.Tri:   26.36" ---- Launching abstraction thread ----
+0.0.Tri:   26.38" ---- Launching multi-phase simplification thread ----
+0.0.B: Trace Attempt 16	[9.43 s]
+0.0.B: Per property time limit expired (10.00 s) [10.42 s]
+0.0.B: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit"	[10.42 s].
+0.0.B: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf"	[0.00 s].
+0.0.B: Trace Attempt  1	[0.07 s]
+0.0.B: Trace Attempt  2	[0.12 s]
+0.0.U: Trace Attempt  3	[26.99 s]
+0.0.K: Trace Attempt  7	[0.49 s]
+0.0.B: Trace Attempt  3	[0.23 s]
+0.0.N: Trace Attempt  7	[0.57 s]
+0.0.K: Trace Attempt  1	[0.70 s]
+0.0.K: Trace Attempt  2	[0.70 s]
+0.0.K: Trace Attempt  3	[0.70 s]
+0.0.K: Trace Attempt  4	[0.70 s]
+0.0.K: Trace Attempt  5	[0.70 s]
+0.0.B: Trace Attempt  4	[0.66 s]
+0.0.U: Trace Attempt  4	[27.69 s]
+0.0.AM: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_allbit"	[11.40 s].
+0.0.AM: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf"	[0.00 s].
+0.0.AM: Trace Attempt  1	[0.07 s]
+0.0.B: Trace Attempt  5	[1.07 s]
+0.0.K: Trace Attempt  1	[1.45 s]
+0.0.K: Trace Attempt  2	[1.45 s]
+0.0.K: Trace Attempt  3	[1.45 s]
+0.0.K: Trace Attempt  4	[1.45 s]
+0.0.K: Trace Attempt  5	[1.46 s]
+0.0.AM: Trace Attempt  2	[0.21 s]
+0.0.Ht: A trace with 13 cycles was found. [28.03 s]
+INFO (IPF047): 0.0.Ht: The cover property "riscv_top_ahb3lite.formaltest_RV12.slt_check_allbit:precondition1" was covered in 13 cycles in 28.07 s.
+INFO (IPF047): 0.0.Ht: The cover property "riscv_top_ahb3lite.formaltest_RV12.slt_check_rf:precondition1" was covered in 13 cycles in 28.07 s.
+0.0.AM: Trace Attempt  3	[0.36 s]
+0.0.Ht: A trace with 13 cycles was found. [28.15 s]
+INFO (IPF047): 0.0.Ht: The cover property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_check:precondition1" was covered in 13 cycles in 28.22 s.
+INFO (IPF047): 0.0.Ht: The cover property "riscv_top_ahb3lite.formaltest_RV12.ast_BNE_taken_Inst_check:precondition1" was covered in 13 cycles in 28.22 s.
+0.0.Ht: Trace Attempt 14	[28.42 s]
+0.0.AM: Trace Attempt  4	[0.63 s]
+0.0.U: Trace Attempt  5	[28.44 s]
+0.0.AM: Trace Attempt  5	[0.87 s]
+0.0.K: Trace Attempt  1	[2.37 s]
+0.0.K: Trace Attempt  1	[3.65 s]
+0.0.Tri: Trace Attempt 17	[4.57 s]
+0.0.B: Trace Attempt 13	[5.68 s]
+0.0.N: Trace Attempt 13	[6.07 s]
+0.0.N: Trace Attempt  1	[6.24 s]
+0.0.K: Trace Attempt  1	[6.19 s]
+0.0.K: Trace Attempt  2	[6.21 s]
+0.0.K: Trace Attempt  3	[6.22 s]
+0.0.N: Trace Attempt  2	[6.28 s]
+0.0.N: Trace Attempt  3	[6.29 s]
+0.0.K: Trace Attempt  4	[6.24 s]
+0.0.K: Trace Attempt  5	[6.26 s]
+0.0.N: Trace Attempt  5	[6.32 s]
+0.0.U: Trace Attempt 10	[33.88 s]
+0.0.Tri: Trace Attempt 19	[7.81 s]
+0.0.Tri: Per property time limit expired (10.00 s) [10.02 s]
+0.0.Tri: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf"	[10.02 s].
+0.0.Tri: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.Tri:   36.29" ---- Launching main thread ----
+0.0.Tri:   36.41" ---- Launching abstraction thread ----
+0.0.Tri:   36.43" ---- Launching multi-phase simplification thread ----
+0.0.N: Trace Attempt 15	[8.22 s]
+0.0.N: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf"	[10.20 s].
+0.0.N: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit"	[0.00 s].
+0.0.K: Trace Attempt 15	[8.15 s]
+0.0.K: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf"	[10.15 s].
+0.0.K: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit"	[0.00 s].
+0.0.AM: Trace Attempt 11	[4.30 s]
+0.0.AM: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf"	[8.93 s].
+0.0.AM: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit"	[0.00 s].
+0.0.B: Trace Attempt 15	[7.93 s]
+0.0.B: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.xori_check_rf"	[9.96 s].
+0.0.B: Starting proof for property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit"	[0.00 s].
+0.0.AM: Trace Attempt  1	[0.07 s]
+0.0.B: Trace Attempt  1	[0.05 s]
+0.0.B: Trace Attempt  2	[0.10 s]
+0.0.AM: Trace Attempt  2	[0.20 s]
+0.0.B: Trace Attempt  3	[0.22 s]
+0.0.AM: Trace Attempt  3	[0.38 s]
+0.0.N: Trace Attempt  7	[0.55 s]
+0.0.K: Trace Attempt  7	[0.56 s]
+0.0.AM: Trace Attempt  4	[0.65 s]
+0.0.B: Trace Attempt  4	[0.62 s]
+0.0.K: Trace Attempt  1	[0.76 s]
+0.0.AM: Trace Attempt  5	[0.85 s]
+0.0.B: Trace Attempt  5	[1.06 s]
+0.0.Tri: Trace Attempt  5	[1.80 s]
+0.0.K: Trace Attempt  1	[1.58 s]
+0.0.U: Trace Attempt 13	[38.62 s]
+0.0.U: Restart 21
+0.0.U: Trace Attempt  1	[38.98 s]
+0.0.K: Trace Attempt  1	[2.66 s]
+0.0.U: Trace Attempt  2	[39.55 s]
+0.0.U: Trace Attempt  3	[40.10 s]
+0.0.U: Trace Attempt  4	[40.64 s]
+0.0.U: Restart 22
+0.0.U: Trace Attempt  1	[40.83 s]
+0.0.K: Trace Attempt  1	[4.22 s]
+0.0.U: Trace Attempt  2	[41.38 s]
+0.0.N: Trace Attempt 12	[4.94 s]
+0.0.U: Trace Attempt  3	[41.98 s]
+0.0.AM: Trace Attempt 10	[5.67 s]
+0.0.B: Trace Attempt 13	[5.64 s]
+0.0.Tri: Trace Attempt 19	[6.07 s]
+0.0.U: Trace Attempt  4	[42.56 s]
+0.0.U: Restart 23
+0.0.U: Trace Attempt  1	[42.75 s]
+0.0.K: Trace Attempt  1	[6.34 s]
+0.0.U: Trace Attempt  2	[43.29 s]
+0.0.U: Trace Attempt  3	[43.77 s]
+0.0.U: Restart 24
+0.0.U: Trace Attempt  1	[43.93 s]
+0.0.U: Trace Attempt  2	[44.47 s]
+0.0.U: Trace Attempt  3	[45.06 s]
+INFO (IPL005): Received request to exit from the console.
+INFO (IIM001): *** Interrupting current command ***
+INFO (IPL014): Waiting for the Tcl-thread to exit.
+INFO (IPF144): 0: Initiating shutdown of proof [45.60 s]
+0.0.Tri: Trace Attempt 20	[7.39 s]
+0.0.Tri: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit"	[9.21 s].
+0.0.Tri: Interrupted. [9.23 s]
+0.0.Tri: Exited with Success (@ 45.73 s)
+0.0.U: Interrupted. [45.73 s]
+0.0.U: Exited with Success (@ 45.78 s)
+0: ProofGrid usable level: 11
+0.0.K: Trace Attempt 13	[7.22 s]
+0.0.K: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit"	[9.08 s].
+0.0.K: Interrupted. [9.10 s]
+0.0.K: Exited with Success (@ 45.83 s)
+0.0.N: Trace Attempt 13	[7.23 s]
+0.0.N: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit"	[9.12 s].
+0.0.N: Interrupted. [9.13 s]
+0.0.N: Exited with Success (@ 45.85 s)
+0.0.B: Trace Attempt 15	[7.89 s]
+0.0.B: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit"	[9.09 s].
+0.0.Hp: Interrupted (multi)
+0.0.Hp: Interrupted. [45.87 s]
+0.0.B: Interrupted. [9.10 s]
+0.0.B: Exited with Success (@ 45.91 s)
+0.0.Hp: Exited with Success (@ 46.12 s)
+0.0.Ht: Interrupted (multi)
+0.0.Ht: Trace Attempt 15	[31.83 s]
+0.0.Ht: Interrupted. [46.63 s]
+0.0.Ht: Exited with Success (@ 46.94 s)
+0.0.AM: Stopped processing property "riscv_top_ahb3lite.formaltest_RV12.aupic_check_allbit"	[10.19 s].
+0.0.AM: Interrupted. [10.23 s]
+0.0.AM: Exited with Success (@ 46.99 s)
+0: ProofGrid usable level: 0
+0: --------------------------------------------------------------
+ProofGrid Summary (utilization 99.86 %)
+--------------------------------------------------------------
+     engines started                               :     8
+     engine jobs started                           :     8
+
+    Average time in state (seconds)
+    ------------------------------------------------------
+    Engine  Pending     Running        Dead    Utilization
+    ------------------------------------------------------
+     Hp        0.07       45.87        0.00       99.86 %
+     Ht        0.06       46.63        0.00       99.87 %
+      B        0.07       45.86        0.00       99.86 %
+      N        0.06       45.81        0.00       99.87 %
+     AM        0.06       46.95        0.00       99.87 %
+      K        0.07       45.78        0.00       99.85 %
+      U        0.06       45.73        0.00       99.86 %
+    Tri        0.06       45.69        0.00       99.86 %
+    all        0.06       46.04        0.00       99.86 %
+
+    Total time in state (seconds)
+    -----------------------------------------
+            Pending     Running        Dead  
+    -----------------------------------------
+               0.51      368.32        0.00
+
+    Data read    : 771.34 kiB
+    Data written : 15.50 kiB
+
+0: All pending notifications were processed.
+INFO (IPM007): "prove" command stopped.
+
+==============================================================
+SUMMARY
+==============================================================
+           Properties Considered              : 22
+                 assertions                   : 10
+                  - proven                    : 0 (0%)
+                  - bounded_proven (user)     : 0 (0%)
+                  - bounded_proven (auto)     : 0 (0%)
+                  - marked_proven             : 0 (0%)
+                  - cex                       : 0 (0%)
+                  - ar_cex                    : 0 (0%)
+                  - undetermined              : 10 (100%)
+                  - unknown                   : 0 (0%)
+                  - error                     : 0 (0%)
+                 covers                       : 12
+                  - unreachable               : 1 (8.33333%)
+                  - bounded_unreachable (user): 0 (0%)
+                  - covered                   : 9 (75%)
+                  - ar_covered                : 0 (0%)
+                  - undetermined              : 2 (16.6667%)
+                  - unknown                   : 0 (0%)
+                  - error                     : 0 (0%)
+ERROR at line 44 in file /home/N26114950/Formal/Project1_team_H/script/isa_original.tcl, more info in Tcl-variable errorInfo
+INFO: Waiting for proof threads to stop...
+INFO: Proof threads stopped.
+INFO (IPL018): The peak resident set memory use for this session was 2.776 GB.
+INFO (IPL015): The Tcl-thread exited with status 0.
+INFO (IPL016): Exiting the analysis session with status 0.

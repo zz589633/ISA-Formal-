@@ -1,0 +1,9 @@
+2022-10-15 20:53:31.123433: : Starting Expert System Logger
+2022-10-15 21:18:31.714180: ERROR  : JG Query "_es_imp -get_inputs_sampled_on_slow_clocks" failed ("ERROR (ECD006): Interrupted current command.
+")
+2022-10-16 01:05:04.172551: ERROR  : JG Query "_es_imp -list_coi_fifos <embedded>::riscv_top_ahb3lite.formaltest_RV12.property_andi:precondition1" failed ("ERROR (ECD006): Interrupted current command.
+")
+2022-10-16 11:01:34.825647: ERROR  : JG Query "_es_imp -list_coi_fifos <embedded>::riscv_top_ahb3lite.formaltest_RV12.property_sw_eff_data:precondition1" failed ("ERROR (ECD006): Interrupted current command.
+")
+2022-10-16 11:02:58.167126: ERROR  : JG Query "_es_imp -list_coi_fifos <embedded>::riscv_top_ahb3lite.formaltest_RV12.property_jalrpc" failed ("ERROR (ECD006): Interrupted current command.
+")
